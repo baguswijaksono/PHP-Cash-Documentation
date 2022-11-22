@@ -13,7 +13,7 @@
             <img src="politeknik-negeri-semarang.png" class="logo">
         <ul>
             <li>
-                <a href="dana.html">Dana</a>
+                <a href="php/login.html">Login</a>
             </li>
             <li>
                 <a href="ovo.html">Ovo</a>
@@ -27,19 +27,16 @@
             <li>
                 <a href="faq.html">FAQs</a>
             </li>
+            <li>
+                <a href="faq.html">FAQs</a>
+            </li>
+            <li>
+                <a href="faq.html">FAQs</a>
+            </li>
         </ul>
     </div> 
     <div class="content">
         <h1>JANGAN LUPA BAYAR KAS :)</h1>
         <p>Bayar kas usahain cepat ya teman - temen biar kelas kita kalau ada perlu bisa cepet, <br>yang rajin bayar kas nanti dapet es krim rasa vannila.</p>
-        <div>
-            <a href="masuk.html">
-            <button type="button"><span></span>Kas Masuk</button>
-        </a>
-        <a href="keluar.html">
-            <button type="button"><span></span>Kas Keluar</button>
-        </div>
-    </a>
-    </div>
 </body>
 </html>
