@@ -5,66 +5,56 @@
 </head>
 
 <body>
-  <table>
-    <thead>
+  <?php
+  include 'config.php';
+  $db = new Database();
+  ?>
+  <table border="1">
       <tr>
         <th>Nomor</th>
         <th>Nama</th>
         <th>Minggu 1</th>
         <th>Minggu 2</th>
         <th>Minggu 3</th>
+        <th>Minggu 4</th>
+        <th>Minggu 5</th>
+        <th>Minggu 6</th>
       </tr>
-    </thead>
-    <tbody>
+      <?php
+      $no=1;
+      foreach($db->tampil_data() as $x){
+      ?>
       <tr>
-        <td><a href="#">1</a></td>
-        <td>Bagus Muhammad Wijaksono</td>
         <td>
-          <p class="status status-unpaid">Unpaid</p>
+          <?php echo $no++; ?>
         </td>
         <td>
-          <p class="status status-unpaid">Unpaid</p>
+          <?php echo $x['na']; ?>
         </td>
         <td>
-          <p class="status status-unpaid">Unpaid</p>
+        <?php echo $x['nama']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu1']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu2']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu3']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu4']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu5']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu6']; ?>
         </td>
       </tr>
-      <tr>
-        <td><a href="#">2</a></td>
-        <td>Sonic</td>
-        <td>1/4/2021</td>
-        <td>
-          <p class="status status-paid">Paid</p>
-        </td>
-        <td class="amount">$415.25</td>
-      </tr>
-      <tr>
-        <td><a href="#">3</a></td>
-        <td>Innercircle</td>
-        <td>1/2/2021</td>
-        <td>
-          <p class="status status-pending">Pending</p>
-        </td>
-        <td class="amount">$4.84</td>
-      </tr>
-      <tr>
-        <td><a href="#">5</a></td>
-        <td>Varsity Plus</td>
-        <td>12/30/2020</td>
-        <td>
-          <p class="status status-pending">Pending</p>
-        </td>
-        <td class="amount">$998.26</td>
-      </tr>
-      <tr>
-        <td><a href="#">6</a></td>
-        <td>Highlander</td>
-        <td>12/18/2020</td>
-        <td>
-          <p class="status status-paid">Paid</p>
-        </td>
-        <td class="amount">$1152.35</td>
-      </tr>
-    </tbody>
+      <?php
+      }
+      ?>
   </table>
 </body>
