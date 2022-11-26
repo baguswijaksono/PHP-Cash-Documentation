@@ -15,8 +15,8 @@
             <img src="assets/img/planetX-logo.png" alt="" class="logo">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Masuk</a></li>
+                <li><a href="assets/php/about_us.php">About</a></li>
+                <li><a href="assets/php/payment_method.php">Payment</a></li>
                 <li><a href="">Keluar</a></li>
             </ul>
         </nav>
