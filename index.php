@@ -17,7 +17,7 @@
                 <li><a href="">Home</a></li>
                 <li><a href="assets/php/about_us.php">About</a></li>
                 <li><a href="assets/php/payment_method.php">Payment</a></li>
-                <li><a href="">Keluar</a></li>
+                <li><a href="assets/php/admin_dashboard.php">Admin</a></li>
             </ul>
         </nav>
 <center>
