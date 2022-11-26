@@ -1,32 +1,36 @@
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/table_style.css">
+  <link rel="stylesheet" href="../css/table_style.css">
 </head>
 
 <body>
   <table>
     <thead>
       <tr>
-        <th>Invoice</th>
-        <th>Company</th>
-        <th>Due Date</th>
-        <th>Status</th>
-        <th>Amount</th>
+        <th>Nomor</th>
+        <th>Nama</th>
+        <th>Minggu 1</th>
+        <th>Minggu 2</th>
+        <th>Minggu 3</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a href="#">INV__1001</a></td>
-        <td>Paragon</td>
-        <td>1/5/2021</td>
+        <td><a href="#">1</a></td>
+        <td>Bagus Muhammad Wijaksono</td>
         <td>
           <p class="status status-unpaid">Unpaid</p>
         </td>
-        <td class="amount">$520.18</td>
+        <td>
+          <p class="status status-unpaid">Unpaid</p>
+        </td>
+        <td>
+          <p class="status status-unpaid">Unpaid</p>
+        </td>
       </tr>
       <tr>
-        <td><a href="#">INV__1002</a></td>
+        <td><a href="#">2</a></td>
         <td>Sonic</td>
         <td>1/4/2021</td>
         <td>
@@ -35,16 +39,16 @@
         <td class="amount">$415.25</td>
       </tr>
       <tr>
-        <td><a href="#">INV__1003</a></td>
+        <td><a href="#">3</a></td>
         <td>Innercircle</td>
         <td>1/2/2021</td>
         <td>
           <p class="status status-pending">Pending</p>
         </td>
-        <td class="amount">$1324.84</td>
+        <td class="amount">$4.84</td>
       </tr>
       <tr>
-        <td><a href="#">INV__1004</a></td>
+        <td><a href="#">5</a></td>
         <td>Varsity Plus</td>
         <td>12/30/2020</td>
         <td>
@@ -53,7 +57,7 @@
         <td class="amount">$998.26</td>
       </tr>
       <tr>
-        <td><a href="#">INV__1005</a></td>
+        <td><a href="#">6</a></td>
         <td>Highlander</td>
         <td>12/18/2020</td>
         <td>
