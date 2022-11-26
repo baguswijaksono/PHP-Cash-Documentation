@@ -19,6 +19,7 @@
         <th>Minggu 4</th>
         <th>Minggu 5</th>
         <th>Minggu 6</th>
+        <th>Minggu 7</th>
       </tr>
       <?php
       $no=1;
@@ -97,6 +98,18 @@
           echo "  <p class='status status-paid'>Paid</p>";
         }
         elseif ($x["minggu6"] == "U") {
+          echo "  <p class='status status-unpaid'>Unpaid</p>";
+        }
+        else {
+          echo "  <p class='status status-pending'>n/a</p>";
+        }  ?>
+        </td>
+        <td>
+        <?php
+        if ($x["minggu7"] == "P") {
+          echo "  <p class='status status-paid'>Paid</p>";
+        }
+        elseif ($x["minggu7"] == "U") {
           echo "  <p class='status status-unpaid'>Unpaid</p>";
         }
         else {
