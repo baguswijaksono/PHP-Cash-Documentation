@@ -13,7 +13,7 @@
             <img src="politeknik-negeri-semarang.png" class="logo">
         <ul>
             <li>
-                <a href="php/login.html">Login</a>
+                <a href="php/password_level.php">Login</a>
             </li>
             <li>
                 <a href="ovo.html">Ovo</a>
