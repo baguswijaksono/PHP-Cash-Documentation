@@ -9,7 +9,7 @@
   include 'config.php';
   $db = new Database();
   ?>
-  <table border="1">
+  <table >
       <tr>
         <th>Nomor</th>
         <th>Nama</th>
@@ -26,31 +26,82 @@
       ?>
       <tr>
         <td>
-          <?php echo $no++; ?>
-        </td>
-        <td>
           <?php echo $x['na']; ?>
         </td>
         <td>
         <?php echo $x['nama']; ?>
         </td>
         <td>
-        <?php echo $x['minggu1']; ?>
+        <?php 
+        if ($x["minggu1"] == "P") {
+          echo "  <p class='status status-paid'>Paid</p>";
+        }
+        elseif ($x["minggu1"] == "U") {
+          echo "  <p class='status status-unpaid'>Unpaid</p>";
+        }
+        else {
+          echo "<p class='status status-pending'>n/a</p>";
+        }  ?>
+        </td>
+        <td >
+        <?php
+        if ($x["minggu2"] == "P") {
+          echo "  <p class='status status-paid'>Paid</p>";
+        }
+        elseif ($x["minggu2"] == "U") {
+          echo "  <p class='status status-unpaid'>Unpaid</p>";
+        }
+        else {
+          echo "  <p class='status status-pending'>n/a</p>";
+        } ?>
         </td>
         <td>
-        <?php echo $x['minggu2']; ?>
+        <?php
+        if ($x["minggu3"] == "P") {
+          echo "  <p class='status status-paid'>Paid</p>";
+        }
+        elseif ($x["minggu3"] == "U") {
+          echo "  <p class='status status-unpaid'>Unpaid</p>";
+        }
+        else {
+          echo "  <p class='status status-pending'>n/a</p>";
+        }  ?>
         </td>
         <td>
-        <?php echo $x['minggu3']; ?>
+        <?php
+        if ($x["minggu4"] == "P") {
+          echo "  <p class='status status-paid'>Paid</p>";
+        }
+        elseif ($x["minggu4"] == "U") {
+          echo "  <p class='status status-unpaid'>Unpaid</p>";
+        }
+        else {
+          echo "  <p class='status status-pending'>n/a</p>";
+        }  ?>
         </td>
         <td>
-        <?php echo $x['minggu4']; ?>
+        <?php
+        if ($x["minggu5"] == "P") {
+          echo "  <p class='status status-paid'>Paid</p>";
+        }
+        elseif ($x["minggu5"] == "U") {
+          echo "  <p class='status status-unpaid'>Unpaid</p>";
+        }
+        else {
+          echo "  <p class='status status-pending'>n/a</p>";
+        } ?>
         </td>
         <td>
-        <?php echo $x['minggu5']; ?>
-        </td>
-        <td>
-        <?php echo $x['minggu6']; ?>
+        <?php
+        if ($x["minggu6"] == "P") {
+          echo "  <p class='status status-paid'>Paid</p>";
+        }
+        elseif ($x["minggu6"] == "U") {
+          echo "  <p class='status status-unpaid'>Unpaid</p>";
+        }
+        else {
+          echo "  <p class='status status-pending'>n/a</p>";
+        }  ?>
         </td>
       </tr>
       <?php
