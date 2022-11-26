@@ -11,7 +11,7 @@
     background-image: url(../img/hand.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 75%;
     color: white;
     padding: 0 8%;
 }
@@ -36,7 +36,6 @@ nav ul li a{
     text-decoration: none;
 }
 .hero h1{
-    padding-top: 50px;
     font-size: 75px;
     margin-top: 12%;
 }

@@ -21,7 +21,7 @@
             </ul>
         </nav>
 <center>
-    <h1>The Magical Planet</h1>
+    <h1>Final Project Dinamis</h1>
     <a href="assets/php/table.php"><button type="button">Informasi Kas Masuk</button></a>
     <a href="assets/php/table_out.php"><button type="button">Informasi Kas Keluar</button></a>
 </center>
