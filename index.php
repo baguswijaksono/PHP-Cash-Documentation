@@ -19,6 +19,7 @@
                 <li><a href="assets/php/payment_method.php">Payment</a></li>
                 <li><a href="assets/php/admin_dashboard.php">Admin</a></li>
                 <li><a href="assets/php/payment_history.php">History</a></li>
+                <li><a href="assets/php/add_data.php">Payment</a></li>
             </ul>
         </nav>
 <center>
