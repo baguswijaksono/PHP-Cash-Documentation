@@ -14,18 +14,17 @@
         <nav>
             <img src="assets/img/planetX-logo.png" alt="" class="logo">
             <ul>
-                <li><a href="">Home</a></li>
                 <li><a href="assets/php/about_us.php">About</a></li>
                 <li><a href="assets/php/payment_method.php">Payment</a></li>
-                <li><a href="assets/php/admin_dashboard.php">Admin</a></li>
                 <li><a href="assets/php/payment_history.php">History</a></li>
-                <li><a href="assets/php/add_data.php">Payment</a></li>
+                <li><a href="assets/php/cash.php">Cash</a></li>
+                <li><a href="assets/php/admin_dashboard.php">Admin</a></li>
             </ul>
         </nav>
 <center>
-    <h1>Final Project Dinamis</h1>
-    <a href="assets/php/table.php"><button type="button">Informasi Kas Masuk</button></a>
-    <a href="assets/php/table_out.php"><button type="button">Informasi Kas Keluar</button></a>
+    <h1>Dynamic Web Programming <br>Final Project.</h1>
+    <a href="assets/php/table.php"><button type="button">Cash In Information</button></a>
+    <a href="assets/php/table_out.php"><button type="button">Cash Out Information</button></a>
 </center>
     </div>
 </body>
