@@ -19,7 +19,12 @@
             }
             return $hasil;
         }
+        function itung_minggu()//buat loop print
+        {
+            $minggu = mysqli_query($this->koneksi,"select count(*) as columns from information_schema.columns where table_name = 'data_kas'");
+            $row = mysqli_fetch_array($minggu);
+            return $row;
+        }
 
     }
-
 ?>
