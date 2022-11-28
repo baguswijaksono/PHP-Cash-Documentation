@@ -11,7 +11,7 @@
                 echo "Koneksi database gagal : " . mysqli_connect_error();
             }
         }
-        function tampil_data()
+        function tampil_data()//nampilin data kas masuk
         {
             $data = mysqli_query($this->koneksi,"select * from data_kas");
             while($row = mysqli_fetch_array($data)){
@@ -24,6 +24,14 @@
             $minggu = mysqli_query($this->koneksi,"select count(*) as columns from information_schema.columns where table_name = 'data_kas'");
             $row = mysqli_fetch_array($minggu);
             return $row;
+        }
+        function tampil_payment_history()//nampilin data kas masuk
+        {
+            $data_py_hstry = mysqli_query($this->koneksi,"select * from payment_history");
+            while($row_py_hstry = mysqli_fetch_array($data_py_hstry)){
+                $hasil_py_hstry[] = $row_py_hstry;
+            }
+            return $hasil_py_hstry;
         }
 
     }
