@@ -28,36 +28,48 @@
       ?>
       <tr>
         <td>
+        <a href="#">
           <?php 
           echo $x['tr_code']; ?>
+          </a>
         </td>
         <td>
           <?php 
-          echo $x['tr_code']; ?>
+          echo $x['py_nm']; ?>
         </td>
         <td>
           <?php 
-          echo $x['tr_code']; ?>
+          echo $x['rc_nm']; ?>
         </td>
         <td>
           <?php 
-          echo $x['tr_code']; ?>
+          echo $x['dt_rc']; ?>
         </td>
         <td>
           <?php 
-          echo $x['tr_code']; ?>
+          echo $x['py_mtd']; ?>
         </td>
         <td>
           <?php 
-          echo $x['tr_code']; ?>
+          echo $x['py_for']; ?>
+        </td>
+        <td>
+          <?php echo "Rp.";
+          echo $x['ttl_py'];
+          echo ",00";
+           ?>
         </td>
         <td>
           <?php 
-          echo $x['tr_code']; ?>
-        </td>
-        <td>
-          <?php 
-          echo $x['tr_code']; ?>
+        if ($x["sts_py"] == "d") {
+          echo "  <p class='status status-paid'>Done</p>";
+        }
+        elseif ($x['sts_py'] == "u") {
+          echo "  <p class='status status-unpaid'>Undone</p>";
+        }
+        else {
+          echo "<p class='status status-pending'>n/a</p>";
+        }  ?>
         </td>
       </tr>
       <?php
