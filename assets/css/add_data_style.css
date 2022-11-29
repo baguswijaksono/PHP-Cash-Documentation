@@ -75,23 +75,5 @@
     inline-size: 90%;
     margin-inline: auto;
     max-inline-size: 960px;
+
   }
-  .h {
-    background-color: #08d;
-    border-radius: 12px;
-    border: 0;
-    box-sizing: border-box;
-    color: #eee;
-    cursor: pointer;
-    font-size: 18px;
-    height: 50px;
-    margin-top: 38px;
-   outline: 0;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .h:active {
-    background-color: #06b;
-  }
-  

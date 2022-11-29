@@ -1,11 +1,43 @@
-
+<style>
+    .button {
+    display: flex;
+    height: 50px;
+    padding: 0;
+    background: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #008168;
+  }
+  
+  .button:active {
+    background: #006e58;
+  }
+  
+  .button__text,
+  .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+  }
+</style>
 <link rel="stylesheet" href="..\css\add_data_style.css">
 <body class="align">
   <div class="grid">
     <form action="" class="form">
       <fieldset class="form__fieldset">
         <legend class="form__legend">Name</legend>
-
         <div class="form__fields">
           <div class="form__field">
             <label for="name">Nama Pembayar</label>
@@ -71,7 +103,11 @@
           </div>
         </div>
       </fieldset>
-      
+      <button type="button" class="button">
+  <span class="button__text">Submit</span>
+  <span class="button__icon">
+  </span>
+</button>
     </form>
   </div>
 </body>
