@@ -19,6 +19,7 @@
         <th>Kredit</th>
         <th>Saldo</th>
         <th>Bukti</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -46,6 +47,9 @@
         </td>
         <td>
         <?php echo $x['sldo']; ?>
+        </td>
+        <td>
+        <?php echo $x['prf']; ?>
         </td>
         <td>
         <?php echo $x['prf']; ?>
