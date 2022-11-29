@@ -8,109 +8,70 @@
 
         <div class="form__fields">
           <div class="form__field">
-            <label for="name">Name</label>
-            <input class="form__input" type="text" autocomplete="name">
+            <label for="name">Nama Pembayar</label>
+            <select class="form__input" autocomplete="country-name">
+              <option value="es">Ade Prasetyo</option>
+              <option value="de">Afifah Naura Kamilia</option>
+              <option value="es">Agustinus Ricad Simbolon</option>
+              <option value="de">Annisa Aisyah Amini Nur Rohmah</option>
+              <option value="es">Azyumi Azra</option>
+              <option value="de">Bagus Muhammad Wijaksono</option>
+              <option value="es">Dewi Maharani</option>
+              <option value="de">Dwi Krisnandi</option>
+              <option value="es">Faris Adhi Laksana Yusuf</option>
+              <option value="de">Febrian Giovanni</option>
+              <option value="es">Ferina Ayu Fella Puspita</option>
+              <option value="de">Kanya Audy Prahmadyta</option>
+              <option value="es">Maulana Arya Yoga Juliansyah</option>
+              <option value="de">Muhammad Naufal Yesha Rendra</option>
+              <option value="es">Nabilla Syaharani Putri S</option>
+              <option value="de">Nandya Nurmala</option>
+              <option value="es">Putri Ayu Widyaningrum</option>
+              <option value="de">Raihana Khalika Putri</option>
+              <option value="es">Salma Afdhila Khalda</option>
+              <option value="de">Syalita Widyandini</option>
+              <option value="es">Vannisa Ardiani</option>
+              <option value="de">Yudha Zaniargo</option>
+            </select>
           </div>
-
           <div class="form__field">
-            <label for="firstname">Firstname</label>
-            <input class="form__input" type="text" autocomplete="given-name">
+            <label for="firstname">Nama Penerima</label>
+            <select class="form__input" autocomplete="country-name">
+            <option value="es">Bagus Muhammad Wijaksono</option>
+              <option value="es">Nandya Nurmala</option>
+            </select>
           </div>
-
-          <div class="form__field">
-            <label for="lastname">Lastname</label>
-            <input class="form__input" type="text" autocomplete="family-name">
-          </div>
-        </div>
       </fieldset>
 
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Contact</legend>
-
+        <legend class="form__legend">Payment Details</legend>
         <div class="form__fields">
           <div class="form__field">
-            <label for="phone">Phone</label>
-            <input class="form__input" type="tel" autocomplete="tel">
+            <label for="phone">Payment Method</label>
+            <select class="form__input" autocomplete="country-name">
+            <option value="es">Tunai</option>
+              <option value="es">Gopay</option>
+              <option value="de">Dana</option>
+              <option value="es">ShopeePay</option>
+              <option value="de">Ovo</option>
+            </select>
           </div>
 
           <div class="form__field">
-            <label for="email">E-Mail</label>
+            <label for="email">Payment For</label>
+            <input class="form__input" type="email" autocomplete="email">
+          </div>
+          <div class="form__field">
+            <label for="email">Payment Amount</label>
+            <input class="form__input" type="email" autocomplete="email">
+          </div>
+          <div class="form__field">
+            <label for="email">Payment Status</label>
             <input class="form__input" type="email" autocomplete="email">
           </div>
         </div>
       </fieldset>
-
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Address</legend>
-
-        <div class="form__fields">
-          <div class="form__field">
-            <label for="street-address">Street Address</label>
-            <input class="form__input" autocomplete="street-address">
-          </div>
-
-          <div class="form__field">
-            <label for="postal-code">Postal Code</label>
-            <input class="form__input" autocomplete="postal-code">
-          </div>
-
-          <div class="form__field">
-            <label for="country">Country</label>
-            <select class="form__input" autocomplete="country-name">
-              <option value="es">Spain</option>
-              <option value="de">Germany</option>
-            </select>
-            <input class="form__input" autocomplete="country-name">
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Payment</legend>
-
-        <div class="form__fields">
-          <div class="form__field">
-            <label>Name on card</label>
-            <input autocomplete="cc-name" class="form__input">
-          </div>
-
-          <div class="form__field">
-            <label>Card Number</label>
-            <input autocomplete="cc-number" class="form__input">
-          </div>
-
-          <div class="form__field">
-            <label>CVC</label>
-            <input autocomplete="cc-csc" class="form__input">
-          </div>
-
-          <div class="form__field">
-            <label>Expiry</label>
-            <input autocomplete="cc-exp" class="form__input">
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Login</legend>
-
-        <div class="form__fields">
-          <div class="form__field">
-            <label>Username</label>
-            <input autocomplete="username" class="form__input">
-          </div>
-
-          <div class="form__field">
-            <label>Current Password</label>
-            <input class="form__input" type="password" autocomplete="current-password">
-          </div>
-
-          <div class="form__field">
-            <label>New Password</label>
-            <input class="form__input" type="password" autocomplete="new-password">
-          </div>
-        </div>
-      </fieldset>
+      
     </form>
   </div>
 </body>
