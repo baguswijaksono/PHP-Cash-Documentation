@@ -3,8 +3,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+<?php
+  include 'config.php';
+  $db = new Database();
+  ?>
   <table>
     <thead>
       <tr>
@@ -19,15 +22,38 @@
       </tr>
     </thead>
     <tbody>
+    <?php
+      $no=1;
+      foreach($db->tampil_data_out() as $x){
+      ?>
       <tr>
-        <td><a href="#">INV__1001</a></td>
-        <td>Paragon</td>
-        <td>1/5/2021</td>
-        <td>
-          <p class="status status-unpaid">Unpaid</p>
+      <td>
+          <?php 
+          echo $x['id']; ?>
         </td>
-        <td class="amount">$520.18</td>
+        <td>
+          <?php 
+          echo $x['dt']; ?>
+        </td>
+        <td>
+        <?php echo $x['dtl']; ?>
+        </td>
+        <td>
+        <?php echo $x['cnt']; ?>
+        </td>
+        <td>
+        <?php echo $x['dbt']; ?>
+        </td>
+        <td>
+        <?php echo $x['sldo']; ?>
+        </td>
+        <td>
+        <?php echo $x['prf']; ?>
+        </td>
       </tr>
+      <?php
+      }
+      ?>
     </tbody>
   </table>
 </body>

@@ -33,6 +33,14 @@
             }
             return $hasil_py_hstry;
         }
+        function tampil_data_out()//nampilin data kas masuk
+        {
+            $data = mysqli_query($this->koneksi,"select * from data_kas_out");
+            while($row = mysqli_fetch_array($data)){
+                $hasil[] = $row;
+            }
+            return $hasil;
+        }
 
     }
 ?>

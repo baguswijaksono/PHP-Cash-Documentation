@@ -21,6 +21,7 @@
                 <li><a href="assets/php/admin_dashboard.php">Admin</a></li>
                 <li><a href="assets/php/add_data.php">Add</a></li>
                 <li><a href="assets/php/feature.php">Feature</a></li>
+                <li><a href="assets/php/login.php">Login</a></li>
             </ul>
         </nav>
 <center>
