@@ -41,6 +41,13 @@
             }
             return $hasil;
         }
-
+        function tambah_data_pembayaran($kode_peminjam,$nama_peminjam,$jenis_kelamin,$tanggal_lahir,$alamat,$pekerjaan)
+        {
+            mysqli_query($this->koneksi,"inset into 'data_kas' (``, `$nama`, `$minggu1`, `$minggu2`, `$minggu3`, `$minggu4`, `$minggu5`, `$minggu6`, `$minggu7`, `$minggu8`)");
+        }
+        function tambah_data_history($kode_peminjam,$nama_peminjam,$jenis_kelamin,$tanggal_lahir,$alamat,$pekerjaan)
+        {
+            mysqli_query($this->koneksi,"inset into 'data_kas' (``, `$nama`, `$minggu1`, `$minggu2`, `$minggu3`, `$minggu4`, `$minggu5`, `$minggu6`, `$minggu7`, `$minggu8`)");
+        }
     }
 ?>
