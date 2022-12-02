@@ -36,7 +36,6 @@ nav ul li a{
     text-decoration: none;
 }
 .hero h1{
-    padding-top: 2%;
     font-size: 75px;
     margin-top: 12%;
 }
@@ -50,3 +49,4 @@ nav ul li a{
     letter-spacing: 1px;
     cursor: pointer;
 }
+

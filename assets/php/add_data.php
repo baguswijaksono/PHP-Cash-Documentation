@@ -91,15 +91,37 @@
 
           <div class="form__field">
             <label for="email">Payment For</label>
-            <input class="form__input" type="email" autocomplete="email">
+            <select class="form__input" autocomplete="country-name">
+            <option value="es">1 Weeks</option>
+            <option value="es">2 Weeks</option>
+            <option value="es">3 Weeks</option>
+            <option value="es">4 Weeks</option>
+            <option value="es">5 Weeks</option>
+            <option value="es">6 Weeks</option>
+            <option value="es">7 Weeks</option>
+            <option value="es">8 Weeks</option>
+            <option value="es">9 Weeks</option>
+            <option value="es">10 Weeks</option>
+            </select>
           </div>
           <div class="form__field">
             <label for="email">Payment Amount</label>
-            <input class="form__input" type="email" autocomplete="email">
+            <select class="form__input" autocomplete="country-name">
+            <option value="es">Rp.5000,00</option>
+              <option value="es">Rp.10.000,00</option>
+              <option value="de">Rp.15.000,00</option>
+              <option value="de">Rp.20.000,00</option>
+              <option value="de">Rp.25.000,00</option>
+              <option value="de">Rp.30.000,00</option>
+              <option value="de">Rp.35.000,00</option>
+            </select>
           </div>
           <div class="form__field">
             <label for="email">Payment Status</label>
-            <input class="form__input" type="email" autocomplete="email">
+            <select class="form__input" autocomplete="country-name">
+              <option value="es">Done</option>
+              <option value="de">Undone</option>
+            </select>
           </div>
         </div>
       </fieldset>
