@@ -38,6 +38,7 @@ nav ul li a{
 .hero h1{
     font-size: 75px;
     margin-top: 12%;
+    padding-top: 5%;
 }
 .hero button{
     background-color: #393939;
