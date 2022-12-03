@@ -8,6 +8,6 @@
     <link rel="stylesheet" href="../css/admindas.css">
 </head>
 <body>
-<center><h1 class="content-header-title">Good afternoon Ryan, <br />you have<small>Rp.324.920,00</small></h1></center>
+<center><h1 class="content-header-title">Good afternoon :3, <br />for now IK-2D have<small>Rp.324.920,00</small></h1></center>
 </body>
 </html>
