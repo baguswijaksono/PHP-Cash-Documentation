@@ -47,7 +47,22 @@
         </td>
         <td>
           <?php 
-          echo $x['py_mtd']; ?>
+                  if ($x["py_mtd"] == "t") {
+                    echo "  <p>Tunai</p>";
+                  }
+                  elseif ($x['py_mtd'] == "g") {
+                    echo "  <p>Gopay</p>";
+                  }
+                  elseif ($x['py_mtd'] == "d") {
+                    echo "  <p>Gopay</p>";
+                  }
+                  elseif ($x['py_mtd'] == "o") {
+                    echo "  <p>ovo</p>";
+                  }
+                  else {
+                    echo "<p class='status status-pending'>n/a</p>";
+                  }
+                  ?>
         </td>
         <td>
           <?php 

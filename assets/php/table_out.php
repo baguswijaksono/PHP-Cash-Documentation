@@ -1,5 +1,6 @@
 <head>
 <link rel="stylesheet" href="../css/table_style.css">
+<link rel="stylesheet" href="../css/button.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -19,7 +20,8 @@
         <th>Kredit</th>
         <th>Saldo</th>
         <th>Bukti</th>
-        <th>Action</th>
+        <th>Edit</th>
+        <th>Hapus</th>
       </tr>
     </thead>
     <tbody>
@@ -54,7 +56,14 @@
         <td>
         <?php echo $x['prf']; ?>
         </td>
+        <td>
+          Edit
+          </td>
+          <td>
+            Hapus
+          </td>
       </tr>
+
       <?php
       }
       ?>

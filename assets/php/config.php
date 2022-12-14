@@ -43,11 +43,26 @@
         }
         function tambah_data_pembayaran($kode_peminjam,$nama_peminjam,$jenis_kelamin,$tanggal_lahir,$alamat,$pekerjaan)
         {
-            mysqli_query($this->koneksi,"inset into 'data_kas' (``, `$nama`, `$minggu1`, `$minggu2`, `$minggu3`, `$minggu4`, `$minggu5`, `$minggu6`, `$minggu7`, `$minggu8`)");
+            mysqli_query($this->koneksi,"insert into 'data_kas' (``, `$nama`, `$minggu1`, `$minggu2`, `$minggu3`, `$minggu4`, `$minggu5`, `$minggu6`, `$minggu7`, `$minggu8`)");
         }
         function tambah_data_history($kode_peminjam,$nama_peminjam,$jenis_kelamin,$tanggal_lahir,$alamat,$pekerjaan)
         {
-            mysqli_query($this->koneksi,"inset into 'data_kas' (``, `$nama`, `$minggu1`, `$minggu2`, `$minggu3`, `$minggu4`, `$minggu5`, `$minggu6`, `$minggu7`, `$minggu8`)");
+            mysqli_query($this->koneksi,"insert into 'data_kas' (``, `$nama`, `$minggu1`, `$minggu2`, `$minggu3`, `$minggu4`, `$minggu5`, `$minggu6`, `$minggu7`, `$minggu8`)");
+        }
+        function login_admin($username)
+        {
+            $data = mysqli_query($this->koneksi,"SELECT * FROM user WHERE username ='$username'");
+            if (mysqli_num_rows($data) == 0) {
+                echo"<b>Data user tidak</b>";
+                $hasil = [];
+                header('location:login.php');
+            }
+            else{
+                while($row = mysqli_fetch_array($data)){
+                    $hasil[] = $row;
+                }
+            }
+            return $hasil;
         }
     }
 ?>

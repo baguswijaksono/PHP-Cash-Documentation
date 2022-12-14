@@ -7,7 +7,7 @@
     --spacing-l: 24px;
     --spacing-xl: 32px;
     --spacing-xxl: 64px;
-    --width-container: 1200px;
+    --width-container: 1920px;
   }
   
   *{
@@ -72,7 +72,7 @@
   .card__background{
     background-size: cover;
     background-position: center;
-    border-radius: var(--spacing-l);
+    border-radius: var(--spacing-m);
     bottom: 0;
     filter: brightness(0.75) saturate(1.2) contrast(0.85);
     left: 0;
