@@ -33,14 +33,13 @@
         <td>
         <?php echo $x['nama_pembayar']; ?>
         </td>
-        <td>
-        <?php echo $x['minggu1']; ?>
-        </td>
-        <td>
-        <?php echo $x['minggu2']; ?>
-        </td>
-        <td>
-        <?php echo $x['minggu3']; ?>
+        <?php 
+        for ($i = 1; $i < 3; $i++){
+          echo "<td>";
+          echo $x['minggu'.$i];
+          echo "</td>";
+        }
+         ?>
         </td>
       </tr>
       <?php
