@@ -41,7 +41,7 @@
         <div class="form__fields">
           <div class="form__field">
             <label for="name">Nama Pembayar</label>
-            <select class="form__input" autocomplete="country-name">
+            <select class="form__input">
               <option value="1">Ade Prasetyo</option>
               <option value="2">Afifah Naura Kamilia</option>
               <option value="3">Agustinus Ricad Simbolon</option>
@@ -68,7 +68,7 @@
           </div>
           <div class="form__field">
             <label for="firstname">Nama Penerima</label>
-            <select class="form__input" autocomplete="country-name">
+            <select class="form__input">
             <option value="es">Bagus Muhammad Wijaksono</option>
               <option value="es">Nandya Nurmala</option>
             </select>
@@ -80,7 +80,7 @@
         <div class="form__fields">
           <div class="form__field">
             <label for="phone">Payment Method</label>
-            <select class="form__input" autocomplete="country-name">
+            <select class="form__input">
             <option value="1">Tunai</option>
               <option value="2">Gopay</option>
               <option value="3">Dana</option>
@@ -91,7 +91,7 @@
 
           <div class="form__field">
             <label for="email">Payment For</label>
-            <select class="form__input" autocomplete="country-name">
+            <select class="form__input">
             <option value="1">1 Weeks</option>
             <option value="2">2 Weeks</option>
             <option value="3">3 Weeks</option>
@@ -106,7 +106,7 @@
           </div>
           <div class="form__field">
             <label for="email">Payment Amount</label>
-            <select class="form__input" autocomplete="country-name">
+            <select class="form__input">
             <option value="es">Rp.5000,00</option>
               <option value="es">Rp.10.000,00</option>
               <option value="de">Rp.15.000,00</option>
@@ -118,7 +118,7 @@
           </div>
           <div class="form__field">
             <label for="email">Payment Status</label>
-            <select class="form__input" autocomplete="country-name">
+            <select class="form__input">
               <option value="es">Done</option>
               <option value="de">Undone</option>
             </select>

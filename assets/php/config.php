@@ -42,15 +42,15 @@
         }
         function tampil_data_out()//nampilin data kas masuk
         {
-            $data = mysqli_query($this->koneksi,"select * from data_kas_out");
+            $data = mysqli_query($this->koneksi,"SELECT * FROM `kaskeluar` ");
             while($row = mysqli_fetch_array($data)){
                 $hasil[] = $row;
             }
             return $hasil;
         }
-        function tambah_data_pembayaran($kode_peminjam,$nama_peminjam,$jenis_kelamin,$tanggal_lahir,$alamat,$pekerjaan)
+        function tambah_data_riwayat($kd_metode,$kd_minggu,$kd_jumlah,$kd_penerima,$kd_pembayar)
         {
-            mysqli_query($this->koneksi,"insert into 'data_kas' (``, `$nama`, `$minggu1`, `$minggu2`, `$minggu3`, `$minggu4`, `$minggu5`, `$minggu6`, `$minggu7`, `$minggu8`)");
+            mysqli_query($this->koneksi,"INSERT INTO `riwayat_kas` (`kd_riwayat`, `kd_metode`, `kd_minggu`, `kd_jumlah`, `kd_penerima`, `kd_pembayar`) VALUES ($kd_metode, $kd_minggu, $kd_jumlah, $kd_penerima, $kd_pembayar);");
         }
         function login_admin($username)
         {

@@ -32,29 +32,14 @@
       <tr>
       <td>
           <?php 
-          echo $x['id']; ?>
+          echo $x['nomor']; ?>
         </td>
         <td>
           <?php 
-          echo $x['dt']; ?>
+          echo $x['rincian']; ?>
         </td>
         <td>
-        <?php echo $x['dtl']; ?>
-        </td>
-        <td>
-        <?php echo $x['cnt']; ?>
-        </td>
-        <td>
-        <?php echo $x['dbt']; ?>
-        </td>
-        <td>
-        <?php echo $x['sldo']; ?>
-        </td>
-        <td>
-        <?php echo $x['prf']; ?>
-        </td>
-        <td>
-        <?php echo $x['prf']; ?>
+        <?php echo $x['jumlah_pengeluaran']; ?>
         </td>
         <td>
           Edit
