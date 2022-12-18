@@ -27,7 +27,13 @@
         }
         function tampil_payment_history()//nampilin data kas masuk
         {
-            $data_py_hstry = mysqli_query($this->koneksi,"select * from payment_history");
+            $data_py_hstry = mysqli_query($this->koneksi,"SELECT kd_riwayat,nama_penerima,nama_pembayar,nama_minggu,nominal_jumlah,nama_status FROM riwayat_kas 
+            INNER JOIN penerima ON riwayat_kas.kd_penerima = penerima.kd_penerima 
+            INNER JOIN pembayar ON riwayat_kas.kd_pembayar = pembayar.kd_pembayar 
+            INNER JOIN minggu ON riwayat_kas.kd_minggu = minggu.kd_minggu 
+            INNER JOIN jumlah ON riwayat_kas.kd_jumlah = jumlah.kd_jumlah
+            INNER JOIN metode ON riwayat_kas.kd_metode = metode.kd_metode
+            INNER JOIN status ON riwayat_kas.kd_status = status.kd_status;");
             while($row_py_hstry = mysqli_fetch_array($data_py_hstry)){
                 $hasil_py_hstry[] = $row_py_hstry;
             }

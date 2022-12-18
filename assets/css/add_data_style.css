@@ -1,9 +1,4 @@
-@use postcss-preset-env {
-    stage: 0;
-  }
-  
-  
-  * {
+    * {
     box-sizing: inherit;
   }
   

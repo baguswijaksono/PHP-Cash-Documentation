@@ -30,61 +30,30 @@
         <td>
         <a href="#">
           <?php 
-          echo $x['tr_code']; ?>
+          echo $x['kd_riwayat']; ?>
           </a>
         </td>
         <td>
           <?php 
-          echo $x['py_nm']; ?>
+          echo $x['nama_penerima']; ?>
         </td>
         <td>
           <?php 
-          echo $x['rc_nm']; ?>
+          echo $x['nama_pembayar']; ?>
         </td>
         <td>
           <?php 
-          echo $x['dt_rc']; ?>
+          echo $x['nama_minggu']; ?>
         </td>
         <td>
           <?php 
-                  if ($x["py_mtd"] == "t") {
-                    echo "  <p>Tunai</p>";
-                  }
-                  elseif ($x['py_mtd'] == "g") {
-                    echo "  <p>Gopay</p>";
-                  }
-                  elseif ($x['py_mtd'] == "d") {
-                    echo "  <p>Gopay</p>";
-                  }
-                  elseif ($x['py_mtd'] == "o") {
-                    echo "  <p>ovo</p>";
-                  }
-                  else {
-                    echo "<p class='status status-pending'>n/a</p>";
-                  }
-                  ?>
-        </td>
-        <td>
-          <?php 
-          echo $x['py_for']; ?>
+          echo $x['nama_status']; ?>
         </td>
         <td>
           <?php echo "Rp.";
-          echo $x['ttl_py'];
+          echo $x['nominal_jumlah'];
           echo ",00";
            ?>
-        </td>
-        <td>
-          <?php 
-        if ($x["sts_py"] == "d") {
-          echo "  <p class='status status-paid'>Done</p>";
-        }
-        elseif ($x['sts_py'] == "u") {
-          echo "  <p class='status status-unpaid'>Undone</p>";
-        }
-        else {
-          echo "<p class='status status-pending'>n/a</p>";
-        }  ?>
         </td>
       </tr>
       <?php
