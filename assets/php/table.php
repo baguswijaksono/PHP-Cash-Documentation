@@ -12,16 +12,14 @@
       <tr>
         <th>Nomor</th>
         <th>Nama</th>
-        <?php
-              $z = $db-> itung_minggu();
-              $hiya = implode("",$z);
-              $hiyahiya = substr($hiya, -2); 
-              $hiyahiyahiya = (int)$hiyahiya;
-              $hiyahiyahiyahiya = $hiyahiyahiya-2;
-      for ($i = 1; $i <= $hiyahiyahiyahiya; $i++) {
-      echo  "<th>Minggu $i</th>";
-      }
-        ?>
+        <th>Minggu 1</th>
+        <th>Minggu 2</th>
+        <th>Minggu 3</th>
+        <th>Minggu 4</th>
+        <th>Minggu 5</th>
+        <th>Minggu 6</th>
+        <th>Minggu 7</th>
+        <th>Minggu 8</th>
       </tr>
       <?php
       $no=1;
@@ -30,27 +28,20 @@
       <tr>
         <td>
           <?php 
-          echo $x['na']; ?>
+          echo $x['kd_minggu']; ?>
         </td>
         <td>
-        <?php echo $x['nama']; ?>
+        <?php echo $x['nama_pembayar']; ?>
         </td>
-        <?php
-        for ($i = 1; $i <= $hiyahiyahiyahiya; $i++) {
-       echo "<td>";
-        //perulangan disini
-        if ($x["minggu"."$i"] == "P") {
-          echo "  <p class='status status-paid'>Paid</p>";
-        }
-        elseif ($x["minggu"."$i"] == "U") {
-          echo "  <p class='status status-unpaid'>Unpaid</p>";
-        }
-        else {
-          echo "<p class='status status-pending'>n/a</p>";
-        }  
-        echo "</td>";
-      }
-        ?>
+        <td>
+        <?php echo $x['minggu1']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu2']; ?>
+        </td>
+        <td>
+        <?php echo $x['minggu3']; ?>
+        </td>
       </tr>
       <?php
       }

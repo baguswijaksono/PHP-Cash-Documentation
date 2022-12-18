@@ -13,7 +13,8 @@
         }
         function tampil_data()//nampilin data kas masuk
         {
-            $data = mysqli_query($this->koneksi,"select * from data_kas");
+            $data = mysqli_query($this->koneksi,"SELECT kd_minggu,nama_pembayar,minggu1,minggu2,minggu3 FROM data_minggu 
+            INNER JOIN pembayar ON data_minggu.kd_pembayar = pembayar.kd_pembayar;");
             while($row = mysqli_fetch_array($data)){
                 $hasil[] = $row;
             }
@@ -21,7 +22,7 @@
         }
         function itung_minggu()//buat loop print
         {
-            $minggu = mysqli_query($this->koneksi,"select count(*) as columns from information_schema.columns where table_name = 'data_kas'");
+            $minggu = mysqli_query($this->koneksi,"select count(*) as columns from information_schema.columns where table_name = 'data_minggu'");
             $row = mysqli_fetch_array($minggu);
             return $row;
         }
