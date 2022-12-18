@@ -42,28 +42,28 @@
           <div class="form__field">
             <label for="name">Nama Pembayar</label>
             <select class="form__input" autocomplete="country-name">
-              <option value="es">Ade Prasetyo</option>
-              <option value="de">Afifah Naura Kamilia</option>
-              <option value="es">Agustinus Ricad Simbolon</option>
-              <option value="de">Annisa Aisyah Amini Nur Rohmah</option>
-              <option value="es">Azyumi Azra</option>
-              <option value="de">Bagus Muhammad Wijaksono</option>
-              <option value="es">Dewi Maharani</option>
-              <option value="de">Dwi Krisnandi</option>
-              <option value="es">Faris Adhi Laksana Yusuf</option>
-              <option value="de">Febrian Giovanni</option>
-              <option value="es">Ferina Ayu Fella Puspita</option>
-              <option value="de">Kanya Audy Prahmadyta</option>
-              <option value="es">Maulana Arya Yoga Juliansyah</option>
-              <option value="de">Muhammad Naufal Yesha Rendra</option>
-              <option value="es">Nabilla Syaharani Putri S</option>
-              <option value="de">Nandya Nurmala</option>
-              <option value="es">Putri Ayu Widyaningrum</option>
-              <option value="de">Raihana Khalika Putri</option>
-              <option value="es">Salma Afdhila Khalda</option>
-              <option value="de">Syalita Widyandini</option>
-              <option value="es">Vannisa Ardiani</option>
-              <option value="de">Yudha Zaniargo</option>
+              <option value="1">Ade Prasetyo</option>
+              <option value="2">Afifah Naura Kamilia</option>
+              <option value="3">Agustinus Ricad Simbolon</option>
+              <option value="4">Annisa Aisyah Amini Nur Rohmah</option>
+              <option value="5">Azyumi Azra</option>
+              <option value="6">Bagus Muhammad Wijaksono</option>
+              <option value="7">Dewi Maharani</option>
+              <option value="8">Dwi Krisnandi</option>
+              <option value="9">Faris Adhi Laksana Yusuf</option>
+              <option value="10">Febrian Giovanni</option>
+              <option value="11">Ferina Ayu Fella Puspita</option>
+              <option value="12">Kanya Audy Prahmadyta</option>
+              <option value="13">Maulana Arya Yoga Juliansyah</option>
+              <option value="14">Muhammad Naufal Yesha Rendra</option>
+              <option value="15">Nabilla Syaharani Putri S</option>
+              <option value="16">Nandya Nurmala</option>
+              <option value="17">Putri Ayu Widyaningrum</option>
+              <option value="18">Raihana Khalika Putri</option>
+              <option value="19">Salma Afdhila Khalda</option>
+              <option value="20">Syalita Widyandini</option>
+              <option value="21">Vannisa Ardiani</option>
+              <option value="22">Yudha Zaniargo</option>
             </select>
           </div>
           <div class="form__field">
@@ -81,27 +81,27 @@
           <div class="form__field">
             <label for="phone">Payment Method</label>
             <select class="form__input" autocomplete="country-name">
-            <option value="es">Tunai</option>
-              <option value="es">Gopay</option>
-              <option value="de">Dana</option>
-              <option value="es">ShopeePay</option>
-              <option value="de">Ovo</option>
+            <option value="1">Tunai</option>
+              <option value="2">Gopay</option>
+              <option value="3">Dana</option>
+              <option value="4">ShopeePay</option>
+              <option value="5">Ovo</option>
             </select>
           </div>
 
           <div class="form__field">
             <label for="email">Payment For</label>
             <select class="form__input" autocomplete="country-name">
-            <option value="es">1 Weeks</option>
-            <option value="es">2 Weeks</option>
-            <option value="es">3 Weeks</option>
-            <option value="es">4 Weeks</option>
-            <option value="es">5 Weeks</option>
-            <option value="es">6 Weeks</option>
-            <option value="es">7 Weeks</option>
-            <option value="es">8 Weeks</option>
-            <option value="es">9 Weeks</option>
-            <option value="es">10 Weeks</option>
+            <option value="1">1 Weeks</option>
+            <option value="2">2 Weeks</option>
+            <option value="3">3 Weeks</option>
+            <option value="4">4 Weeks</option>
+            <option value="5">5 Weeks</option>
+            <option value="6">6 Weeks</option>
+            <option value="7">7 Weeks</option>
+            <option value="8">8 Weeks</option>
+            <option value="9">9 Weeks</option>
+            <option value="10">10 Weeks</option>
             </select>
           </div>
           <div class="form__field">

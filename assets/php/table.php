@@ -12,14 +12,13 @@
       <tr>
         <th>Nomor</th>
         <th>Nama</th>
-        <th>Minggu 1</th>
-        <th>Minggu 2</th>
-        <th>Minggu 3</th>
-        <th>Minggu 4</th>
-        <th>Minggu 5</th>
-        <th>Minggu 6</th>
-        <th>Minggu 7</th>
-        <th>Minggu 8</th>
+        <?php 
+        for ($i = 1; $i < 10; $i++){
+          echo "<th>";
+          echo 'minggu '.$i;
+          echo "</th>";
+        }
+         ?>
       </tr>
       <?php
       $no=1;
