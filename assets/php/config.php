@@ -67,7 +67,7 @@
             }
             return $hasil;
         }
-        function tambah_data_in($kd_metode,$kd_minggu,$kd_jumlah,$kd_penerima,$kd_pembayar)
+        function tambah_data_in($kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11,$minggu12)
         {
             mysqli_query($this->koneksi,"INSERT INTO `data_minggu` (`kd_minggu`, `kd_pembayar`, `minggu1`, `minggu2`, `minggu3`, `minggu4`, `minggu5`, `minggu6`, `minggu7`, `minggu8`, `minggu9`, `minggu10`, `minggu11`, `minggu12`) VALUES ('2', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1');");
         }

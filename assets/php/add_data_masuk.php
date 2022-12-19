@@ -36,13 +36,13 @@
 <body class="align">
   <div class="grid">
     <form action="" class="form">
+      </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Name</legend>
-        <div class="form__fields">
+        <legend class="form__legend">Payment HIYA HIYA</legend>
           <div class="form__field">
-            <label for="name">Nama Pembayar</label>
+            <label for="email">Nama Pembayar</label>
             <select class="form__input">
-              <option value="1">Ade Prasetyo</option>
+            <option value="1">Ade Prasetyo</option>
               <option value="2">Afifah Naura Kamilia</option>
               <option value="3">Agustinus Ricad Simbolon</option>
               <option value="4">Annisa Aisyah Amini Nur Rohmah</option>
@@ -67,59 +67,87 @@
             </select>
           </div>
           <div class="form__field">
-            <label for="firstname">Nama Penerima</label>
+            <label for="email">Minggu 1</label>
             <select class="form__input">
-            <option value="es">Bagus Muhammad Wijaksono</option>
-              <option value="es">Nandya Nurmala</option>
-            </select>
-          </div>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Payment Details</legend>
-        <div class="form__fields">
-          <div class="form__field">
-            <label for="phone">Payment Method</label>
-            <select class="form__input">
-            <option value="1">Tunai</option>
-              <option value="2">Gopay</option>
-              <option value="3">Dana</option>
-              <option value="4">ShopeePay</option>
-              <option value="5">Ovo</option>
-            </select>
-          </div>
-
-          <div class="form__field">
-            <label for="email">Payment For</label>
-            <select class="form__input">
-            <option value="1">1 Weeks</option>
-            <option value="2">2 Weeks</option>
-            <option value="3">3 Weeks</option>
-            <option value="4">4 Weeks</option>
-            <option value="5">5 Weeks</option>
-            <option value="6">6 Weeks</option>
-            <option value="7">7 Weeks</option>
-            <option value="8">8 Weeks</option>
-            <option value="9">9 Weeks</option>
-            <option value="10">10 Weeks</option>
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
             </select>
           </div>
           <div class="form__field">
-            <label for="email">Payment Amount</label>
+            <label for="email">Minggu 2</label>
             <select class="form__input">
-            <option value="1">Rp.5000,00</option>
-              <option value="2">Rp.10.000,00</option>
-              <option value="3">Rp.15.000,00</option>
-              <option value="4">Rp.20.000,00</option>
-              <option value="5">Rp.25.000,00</option>
-              <option value="6">Rp.30.000,00</option>
-              <option value="7">Rp.35.000,00</option>
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
             </select>
           </div>
           <div class="form__field">
-            <label for="email">Payment Status</label>
+            <label for="email">Minggu 3</label>
             <select class="form__input">
-              <option value="1">Done</option>
-              <option value="1">Undone</option>
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 4</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 5</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 6</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 7</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 8</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 9</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 10</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 11</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="email">Minggu 12</label>
+            <select class="form__input">
+            <option value="1">Lunas</option>
+              <option value="2">Belum Lunas</option>
             </select>
           </div>
         </div>
