@@ -23,7 +23,6 @@
         <th>Minggu 9</th>
         <th>Minggu 10</th>
         <th>Minggu 11</th>
-        <th>Minggu 12</th>
       </tr>
       <?php
       $no=1;
@@ -33,6 +32,10 @@
         <td>
           <?php 
           echo $x['kd_minggu']; ?>
+        </td>
+        <td>
+          <?php 
+          echo $x['tgl']; ?>
         </td>
         <td>
         <?php echo $x['nama_pembayar']; ?>
