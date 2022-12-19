@@ -48,10 +48,6 @@
             }
             return $hasil;
         }
-        function tambah_data_riwayat($kd_metode,$kd_minggu,$kd_jumlah,$kd_penerima,$kd_pembayar)
-        {
-            mysqli_query($this->koneksi,"INSERT INTO `riwayat_kas` (`kd_riwayat`, `kd_metode`, `kd_minggu`, `kd_jumlah`, `kd_penerima`, `kd_pembayar`) VALUES ($kd_metode, $kd_minggu, $kd_jumlah, $kd_penerima, $kd_pembayar);");
-        }
         function login_admin($username)
         {
             $data = mysqli_query($this->koneksi,"SELECT * FROM user WHERE username ='$username'");
@@ -78,6 +74,10 @@
         function tambah_data_riwayat($kd_riwayat,$kd_metode,$kd_minggu,$kd_jumlah,$kd_penerima,$kd_pembayar,$kd_status)
         {
             mysqli_query($this->koneksi,"INSERT INTO `riwayat_kas` (`kd_riwayat`, `kd_metode`, `kd_minggu`, `kd_jumlah`, `kd_penerima`, `kd_pembayar`, `kd_status`) VALUES ('1', '1', '1', '2', '2', '1', '1');");
+        }
+        function hapus_data_masuk($kd_pembayar)
+        {
+            mysqli_query($this->koneksi,"DELETE FROM `data_minggu` WHERE `data_minggu`.`kd_minggu` = $kd_pembayar ");
         }
     }
 ?>

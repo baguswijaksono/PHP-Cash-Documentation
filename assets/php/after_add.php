@@ -25,7 +25,7 @@ body {
   positon: relative;
   width: 50px;
   height: 50px;
-  background: #380848;
+  background: #23C552;
   transform: scale(0);
   border-radius: 50%;
   color: white;
@@ -75,10 +75,12 @@ body {
 <div class="container">
 	<div class="rectangle">
 		<div class="notification-text">
-			<i class="material-icons">info</i>
-			<span>&nbsp;&nbsp;This is a test notification.</span>
+      <center>
+      <span>Penambahan Data Telah Berhasil</span>
+      </center>
 		</div>
 	</div>
+  <h1 style="color:black">Back to Home</h1>
 </div>
 
 </body>
