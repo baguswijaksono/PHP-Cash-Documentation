@@ -67,9 +67,14 @@
             }
             return $hasil;
         }
-        function tambah_data_in($kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11,$minggu12)
+        function tambah_data_in($kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11)
         {
-            mysqli_query($this->koneksi,"INSERT INTO `data_minggu` (`kd_minggu`, `kd_pembayar`, `minggu1`, `minggu2`, `minggu3`, `minggu4`, `minggu5`, `minggu6`, `minggu7`, `minggu8`, `minggu9`, `minggu10`, `minggu11`, `minggu12`) VALUES ('2', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1');");
+            mysqli_query($this->koneksi,"INSERT INTO `data_minggu` (`kd_minggu`, `kd_pembayar`, `minggu1`, `minggu2`, `minggu3`, `minggu4`, `minggu5`, `minggu6`, `minggu7`, `minggu8`, `minggu9`, `minggu10`, `minggu11`) VALUES ($kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11);");
+        }
+        function update_data_in($kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11)
+        {
+            mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = $kd_minggu, `kd_pembayar` = '7', `minggu1` = $minggu1, `minggu2` = $minggu1, `minggu3` = $minggu1, `minggu4` = $minggu1, `minggu5` = $minggu1, `minggu6` = $minggu1, `minggu7` = $minggu1, `minggu8` = $minggu1, `minggu9` = $minggu1, `minggu10` = $minggu1, `minggu11` = $minggu1 WHERE `data_minggu`.`kd_minggu` = $kd_minggu);");
         }
     }
 ?>
+
