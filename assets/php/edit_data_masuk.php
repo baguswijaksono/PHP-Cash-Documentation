@@ -12,12 +12,7 @@
     include 'config.php';
     $db = new Database();
     if(isset($_GET['id'])){
-        $kode_peminjam = $_GET['id'];
-    }
-    else
-    {
-        header('Location: tampil_data.php');
-    }
+        $kode_peminjam = $_GET['id'];}
     ?>
     <h3>Tambah Data Peminjam</h3>
     <form action="simpan_edit_data_masuk.php?id=<?php echo $kode_peminjam; ?>" method='POST' class="form">
@@ -27,28 +22,9 @@
             <td>
             <label for="name">Nama Pembayar</label>
             <select name="kd_minggu" id="kd_minggu" class="form__input">
-            <option value="1">Ade Prasetyo</option>
-              <option value="2">Afifah Naura Kamilia</option>
-              <option value="3">Agustinus Ricad Simbolon</option>
-              <option value="4">Annisa Aisyah Amini Nur Rohmah</option>
-              <option value="5">Azyumi Azra</option>
-              <option value="6">Bagus Muhammad Wijaksono</option>
-              <option value="7">Dewi Maharani</option>
-              <option value="8">Dwi Krisnandi</option>
-              <option value="9">Faris Adhi Laksana Yusuf</option>
-              <option value="10">Febrian Giovanni</option>
-              <option value="11">Ferina Ayu Fella Puspita</option>
-              <option value="12">Kanya Audy Prahmadyta</option>
-              <option value="13">Maulana Arya Yoga Juliansyah</option>
-              <option value="14">Muhammad Naufal Yesha Rendra</option>
-              <option value="15">Nabilla Syaharani Putri S</option>
-              <option value="16">Nandya Nurmala</option>
-              <option value="17">Putri Ayu Widyaningrum</option>
-              <option value="18">Raihana Khalika Putri</option>
-              <option value="19">Salma Afdhila Khalda</option>
-              <option value="20">Syalita Widyandini</option>
-              <option value="21">Vannisa Ardiani</option>
-              <option value="22">Yudha Zaniargo</option>
+                <?php
+                echo "<option value='$kode_peminjam'>$kode_peminjam</option>";
+                ?>
                 </select>      
                 </td>
             </tr>
@@ -56,39 +32,78 @@
             <tr>
             <td>
                 <select name="kd_pembayar" id="kd_pembayar" class="form__input">
-                <option value="1">Ade Prasetyo</option>
-              <option value="2">Afifah Naura Kamilia</option>
-              <option value="3">Agustinus Ricad Simbolon</option>
-              <option value="4">Annisa Aisyah Amini Nur Rohmah</option>
-              <option value="5">Azyumi Azra</option>
-              <option value="6">Bagus Muhammad Wijaksono</option>
-              <option value="7">Dewi Maharani</option>
-              <option value="8">Dwi Krisnandi</option>
-              <option value="9">Faris Adhi Laksana Yusuf</option>
-              <option value="10">Febrian Giovanni</option>
-              <option value="11">Ferina Ayu Fella Puspita</option>
-              <option value="12">Kanya Audy Prahmadyta</option>
-              <option value="13">Maulana Arya Yoga Juliansyah</option>
-              <option value="14">Muhammad Naufal Yesha Rendra</option>
-              <option value="15">Nabilla Syaharani Putri S</option>
-              <option value="16">Nandya Nurmala</option>
-              <option value="17">Putri Ayu Widyaningrum</option>
-              <option value="18">Raihana Khalika Putri</option>
-              <option value="19">Salma Afdhila Khalda</option>
-              <option value="20">Syalita Widyandini</option>
-              <option value="21">Vannisa Ardiani</option>
-              <option value="22">Yudha Zaniargo</option>
+                <?php
+    if ($kode_peminjam == 1) {
+    echo "<option value='$kode_peminjam'>Ade Prasetyo</option>";
+  } elseif ($kode_peminjam == 2) {
+    echo "<option value='$kode_peminjam'>Afifah Naura Kamilia</option>";
+  } elseif ($kode_peminjam == 3) {
+    echo "<option value='$kode_peminjam'>Agustinus Ricad Simbolon</option>";
+  }elseif ($kode_peminjam == 4) {
+    echo "<option value='$kode_peminjam'>Annisa Aisyah Amini Nur Rohmah</option>";
+  }elseif ($kode_peminjam == 5) {
+    echo "<option value='$kode_peminjam'>Azyumi Azra</option>";
+  }elseif ($kode_peminjam == 6) {
+    echo "<option value='$kode_peminjam'>Bagus Muhammad Wijaksono</option>";
+  }elseif ($kode_peminjam == 7) {
+    echo "<option value='$kode_peminjam'>Dewi Maharani</option>";
+  }elseif ($kode_peminjam == 8) {
+    echo "<option value='$kode_peminjam'>Dwi Krisnandi</option>";
+  }elseif ($kode_peminjam == 9) {
+    echo "<option value='$kode_peminjam'>Faris Adhi Laksana Yusuf</option>";
+  }elseif ($kode_peminjam == 10) {
+    echo "<option value='$kode_peminjam'>Febrian Giovanni</option>";
+  }elseif ($kode_peminjam == 11) {
+    echo "<option value='$kode_peminjam'>Ferina Ayu Fella Puspita</option>";
+  }elseif ($kode_peminjam == 12) {
+    echo "<option value='$kode_peminjam'>Kanya Audy Prahmadyta</option>";
+  }elseif ($kode_peminjam == 13) {
+    echo "<option value='$kode_peminjam'>Maulana Arya Yoga Juliansyah</option>";
+  }elseif ($kode_peminjam == 14) {
+    echo "<option value='$kode_peminjam'>Muhammad Naufal Yesha Rendra</option>";
+  }elseif ($kode_peminjam == 15) {
+    echo "<option value='$kode_peminjam'>Nabilla Syaharani Putri S</option>";
+  }elseif ($kode_peminjam == 16) {
+    echo "<option value='$kode_peminjam'>Nandya Nurmala</option>";
+  }elseif ($kode_peminjam == 17) {
+    echo "<option value='$kode_peminjam'>Putri Ayu Widyaningrum</option>";
+  }elseif ($kode_peminjam == 18) {
+    echo "<option value='$kode_peminjam'>Raihana Khalika Putri</option>";
+  }elseif ($kode_peminjam == 19) {
+    echo "<option value='$kode_peminjam'>Salma Afdhila Khalda</option>";
+  }elseif ($kode_peminjam == 20) {
+    echo "<option value='$kode_peminjam'>Syalita Widyandini</option>";
+  }elseif ($kode_peminjam == 21) {
+    echo "<option value='$kode_peminjam'>Vannisa Ardiani</option>";
+  }elseif ($kode_peminjam == 22) {
+    echo "<option value='$kode_peminjam'>Yudha Zaniargo</option>";
+  }?>
                 </select>      
                 </td>
             </tr>
-            <tr>
+           
+            <?php
+      $no=1;
+      foreach($db->ambil_data_lunas($kode_peminjam) as $x){
+      ?> <tr>
             <td>
                 <select name="minggu1" id="minggu1" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
+                    <?php
+                    if($x['minggu1']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
                 </select>      
                 </td>
-            </tr>
+                </tr>
+      <?php
+      }
+      ?>
+      
             <tr>
             <td>
                 <select name="minggu2" id="minggu2" class="form__input">

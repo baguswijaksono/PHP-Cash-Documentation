@@ -84,6 +84,15 @@
             }
             return $hasil;
         }
+        function ambil_data_lunas($index)//nampilin data kas masuk
+        {
+            $data = mysqli_query($this->koneksi,"SELECT * FROM `data_minggu` WHERE kd_minggu=$index;");
+            while($row = mysqli_fetch_array($data)){
+                $hasil[] = $row;
+            }
+            return $hasil;
+        }
+        
         
         
 
