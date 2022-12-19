@@ -7,6 +7,5 @@
     <title>Admin Table View</title>
 </head>
 <body>
-    
 </body>
 </html>

@@ -12,13 +12,18 @@
       <tr>
         <th>Nomor</th>
         <th>Nama</th>
-        <?php 
-        for ($i = 1; $i < 10; $i++){
-          echo "<th>";
-          echo 'minggu '.$i;
-          echo "</th>";
-        }
-         ?>
+        <th>Minggu 1</th>
+        <th>Minggu 2</th>
+        <th>Minggu 3</th>
+        <th>Minggu 4</th>
+        <th>Minggu 5</th>
+        <th>Minggu 6</th>
+        <th>Minggu 7</th>
+        <th>Minggu 8</th>
+        <th>Minggu 9</th>
+        <th>Minggu 10</th>
+        <th>Minggu 11</th>
+        <th>Minggu 12</th>
       </tr>
       <?php
       $no=1;
@@ -33,9 +38,13 @@
         <?php echo $x['nama_pembayar']; ?>
         </td>
         <?php 
-        for ($i = 1; $i < 3; $i++){
+        for ($i = 1; $i < 12; $i++){
           echo "<td>";
-          echo $x['minggu'.$i];
+          if($x['minggu'.$i] == "1"){
+            echo "Lunas";
+          }else{
+            echo "Belum Lunas";
+          }
           echo "</td>";
         }
          ?>
