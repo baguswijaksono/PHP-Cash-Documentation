@@ -71,10 +71,20 @@
         {
             mysqli_query($this->koneksi,"DELETE FROM `data_minggu` WHERE `data_minggu`.`kd_minggu` = $kd_pembayar ");
         }
-        function hedit_data_masuk($kd_pembayar)
+        function edit_data_masuk($kd_mingguindex,$kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11)
         {
-            mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = '3', `kd_pembayar` = '3', `minggu1` = '3', `minggu2` = '3', `minggu3` = '3', `minggu4` = '3', `minggu5` = '3', `minggu6` = '3', `minggu7` = '3', `minggu8` = '3', `minggu9` = '3', `minggu10` = '3', `minggu11` = '3' WHERE `data_minggu`.`kd_minggu` = 2; ");
+            mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = $kd_minggu, `kd_pembayar` = $kd_pembayar, `minggu1` = $minggu1, `minggu2` = $minggu2, `minggu3` = $minggu3, `minggu4` = $minggu4, `minggu5` = $minggu5, `minggu6` = $minggu6, `minggu7` = $minggu7, `minggu8` = $minggu8, `minggu9` = $minggu9, `minggu10` = $minggu10, `minggu11` = $minggu1 WHERE `data_minggu`.`kd_minggu` = $kd_mingguindex; ");
         }
+        function tampil_data_edit($index)//nampilin data kas masuk
+        {
+            $data = mysqli_query($this->koneksi,"SELECT kd_minggu,nama_pembayar,minggu1,minggu2,minggu3,minggu4,minggu5,minggu6,minggu7,minggu8,minggu9,minggu10,minggu11 FROM data_minggu 
+            INNER JOIN pembayar ON data_minggu.kd_pembayar = pembayar.kd_pembayar WHERE kd_minggu=$index;");
+            while($row = mysqli_fetch_array($data)){
+                $hasil[] = $row;
+            }
+            return $hasil;
+        }
+        
         
 
         

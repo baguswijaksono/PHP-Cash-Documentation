@@ -11,6 +11,14 @@
     <?php
     include 'config.php';
     $db = new Database();
+    if(isset($_GET['id'])){
+        $kode_peminjam = $_GET['id'];
+        $data_peminjam = $db->tampil_data_edit($kode_peminjam);
+    }
+    else
+    {
+        header('Location: tampil_data.php');
+    }
     ?>
     <h3>Tambah Data Peminjam</h3>
     <form action="simpan_edit_data_masuk.php" method='POST' class="form">
