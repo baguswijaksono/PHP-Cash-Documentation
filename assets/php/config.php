@@ -75,6 +75,10 @@
         {
             mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = $kd_minggu, `kd_pembayar` = '7', `minggu1` = $minggu1, `minggu2` = $minggu1, `minggu3` = $minggu1, `minggu4` = $minggu1, `minggu5` = $minggu1, `minggu6` = $minggu1, `minggu7` = $minggu1, `minggu8` = $minggu1, `minggu9` = $minggu1, `minggu10` = $minggu1, `minggu11` = $minggu1 WHERE `data_minggu`.`kd_minggu` = $kd_minggu);");
         }
+        function tambah_data_riwayat($kd_riwayat,$kd_metode,$kd_minggu,$kd_jumlah,$kd_penerima,$kd_pembayar,$kd_status)
+        {
+            mysqli_query($this->koneksi,"INSERT INTO `riwayat_kas` (`kd_riwayat`, `kd_metode`, `kd_minggu`, `kd_jumlah`, `kd_penerima`, `kd_pembayar`, `kd_status`) VALUES ('1', '1', '1', '2', '2', '1', '1');");
+        }
     }
 ?>
 

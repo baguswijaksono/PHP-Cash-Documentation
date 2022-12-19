@@ -79,7 +79,7 @@ nav ul li a{
         <nav>
             <img src="assets/img/planetX-logo.png" alt="" class="logo">
             <ul>
-                <li><a href="assets/php/payment_history.php">History</a></li>
+                <li><a href="add_data_riwayat.php">Tambah Riwayat</a></li>
                 <li><a href="assets/php/cash.php">Cash</a></li>
                 <li><a href="assets/php/cash.php">Cash</a></li>
                 <li><a href="logout.php">Logout</a></li>
