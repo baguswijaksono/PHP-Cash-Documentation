@@ -23,7 +23,8 @@
         <th>Minggu 9</th>
         <th>Minggu 10</th>
         <th>Minggu 11</th>
-        <th>Minggu 12</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
       <?php
       $no=1;

@@ -85,7 +85,8 @@
             <?php
       $no=1;
       foreach($db->ambil_data_lunas($kode_peminjam) as $x){
-      ?> <tr>
+      ?> 
+      <tr>
             <td>
                 <select name="minggu1" id="minggu1" class="form__input">
                     <?php
@@ -100,90 +101,158 @@
                 </select>      
                 </td>
                 </tr>
+                <tr>
+            <td>
+                <select name="minggu2" id="minggu2" class="form__input">
+                    <?php
+                    if($x['minggu2']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu3" id="minggu3" class="form__input">
+                    <?php
+                    if($x['minggu3']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu4" id="minggu4" class="form__input">
+                    <?php
+                    if($x['minggu4']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu5" id="minggu5" class="form__input">
+                    <?php
+                    if($x['minggu5']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu6" id="minggu6" class="form__input">
+                    <?php
+                    if($x['minggu6']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu7" id="minggu7" class="form__input">
+                    <?php
+                    if($x['minggu7']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>      <tr>
+            <td>
+                <select name="minggu8" id="minggu8" class="form__input">
+                    <?php
+                    if($x['minggu8']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu9" id="minggu9" class="form__input">
+                    <?php
+                    if($x['minggu9']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu10" id="minggu10" class="form__input">
+                    <?php
+                    if($x['minggu10']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
+                <tr>
+            <td>
+                <select name="minggu11" id="minggu11" class="form__input">
+                    <?php
+                    if($x['minggu11']==1){
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='2'>Belum Lunas</option>";
+                    }else{
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                    }
+                    ?>
+                </select>      
+                </td>
+                </tr>
       <?php
       }
       ?>
-      
-            <tr>
-            <td>
-                <select name="minggu2" id="minggu2" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-            <td>
-                <select name="minggu3" id="minggu3" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-            <td>
-                <select name="minggu4" id="minggu4" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-            <td>
-                <select name="minggu5" id="minggu5" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-            <td>
-                <select name="minggu6" id="minggu6" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-            <td>
-                <select name="minggu7" id="minggu7" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-            <td>
-                <select name="minggu8" id="minggu8" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-            <td>
-                <select name="minggu9" id="minggu9" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-                <td>
-                <select name="minggu10" id="minggu10" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
-            <tr>
-                <td>
-                <select name="minggu11" id="minggu11" class="form__input">
-                <option value="1">Lunas</option>
-                <option value="2">Belum Lunas</option>
-                </select>      
-                </td>
-            </tr>
             <tr>
                 <td>
                 <input type="submit" value="simpan"></td>
