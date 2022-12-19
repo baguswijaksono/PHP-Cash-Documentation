@@ -13,7 +13,6 @@
     $db = new Database();
     if(isset($_GET['id'])){
         $kode_peminjam = $_GET['id'];
-        $data_peminjam = $db->tampil_data_edit($kode_peminjam);
     }
     else
     {
@@ -21,7 +20,7 @@
     }
     ?>
     <h3>Tambah Data Peminjam</h3>
-    <form action="simpan_edit_data_masuk.php" method='POST' class="form">
+    <form action="simpan_edit_data_masuk.php?id=<?php echo $kode_peminjam; ?>" method='POST' class="form">
         <table>
             <tr>
             <tr>
