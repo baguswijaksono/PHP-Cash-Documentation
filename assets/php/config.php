@@ -79,6 +79,16 @@
         {
             mysqli_query($this->koneksi,"DELETE FROM `data_minggu` WHERE `data_minggu`.`kd_minggu` = $kd_pembayar ");
         }
+        function kode_peminjam($kode_peminjam)
+        {
+            $data = mysqli_query($this->koneksi,"SELECT kd_minggu,nama_pembayar,minggu1,minggu2,minggu3,minggu4,minggu5,minggu6,minggu7,minggu8,minggu9,minggu10,minggu11 FROM data_minggu 
+            INNER JOIN pembayar ON data_minggu.kd_pembayar = pembayar.kd_pembayar where a.kode_peminjam='$kode_peminjam';");
+            while($row = mysqli_fetch_array($data)){
+                $hasil[] = $row;
+            }
+            return $hasil;
+        }
+        
     }
 ?>
 

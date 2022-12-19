@@ -55,9 +55,8 @@
         ?>
         </td>
         <td>
-        <a href="logout.php">Logout</a>
+        <a href="hapus_data.php?id=<?php echo $x['kd_minggu']; ?>">Hapus</a>
         <?php 
-        
         ?>
         </td>
       </tr>
