@@ -50,14 +50,10 @@
          ?>
         </td>
         <td>
-        <?php 
-        echo "Edit";
-        ?>
+        <a href="edit_data.php?id=<?php echo $x['kd_minggu']; ?>">Edit</a>
         </td>
         <td>
         <a href="hapus_data.php?id=<?php echo $x['kd_minggu']; ?>">Hapus</a>
-        <?php 
-        ?>
         </td>
       </tr>
       <?php

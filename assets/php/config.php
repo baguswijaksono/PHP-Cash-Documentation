@@ -67,27 +67,16 @@
         {
             mysqli_query($this->koneksi,"INSERT INTO `data_minggu` (`kd_minggu`, `kd_pembayar`, `minggu1`, `minggu2`, `minggu3`, `minggu4`, `minggu5`, `minggu6`, `minggu7`, `minggu8`, `minggu9`, `minggu10`, `minggu11`) VALUES ($kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11);");
         }
-        function update_data_in($kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11)
-        {
-            mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = $kd_minggu, `kd_pembayar` = '7', `minggu1` = $minggu1, `minggu2` = $minggu1, `minggu3` = $minggu1, `minggu4` = $minggu1, `minggu5` = $minggu1, `minggu6` = $minggu1, `minggu7` = $minggu1, `minggu8` = $minggu1, `minggu9` = $minggu1, `minggu10` = $minggu1, `minggu11` = $minggu1 WHERE `data_minggu`.`kd_minggu` = $kd_minggu);");
-        }
-        function tambah_data_riwayat($kd_riwayat,$kd_metode,$kd_minggu,$kd_jumlah,$kd_penerima,$kd_pembayar,$kd_status)
-        {
-            mysqli_query($this->koneksi,"INSERT INTO `riwayat_kas` (`kd_riwayat`, `kd_metode`, `kd_minggu`, `kd_jumlah`, `kd_penerima`, `kd_pembayar`, `kd_status`) VALUES ('1', '1', '1', '2', '2', '1', '1');");
-        }
         function hapus_data_masuk($kd_pembayar)
         {
             mysqli_query($this->koneksi,"DELETE FROM `data_minggu` WHERE `data_minggu`.`kd_minggu` = $kd_pembayar ");
         }
-        function kode_peminjam($kode_peminjam)
+        function hedit_data_masuk($kd_pembayar)
         {
-            $data = mysqli_query($this->koneksi,"SELECT kd_minggu,nama_pembayar,minggu1,minggu2,minggu3,minggu4,minggu5,minggu6,minggu7,minggu8,minggu9,minggu10,minggu11 FROM data_minggu 
-            INNER JOIN pembayar ON data_minggu.kd_pembayar = pembayar.kd_pembayar where a.kode_peminjam='$kode_peminjam';");
-            while($row = mysqli_fetch_array($data)){
-                $hasil[] = $row;
-            }
-            return $hasil;
+            mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = '3', `kd_pembayar` = '3', `minggu1` = '3', `minggu2` = '3', `minggu3` = '3', `minggu4` = '3', `minggu5` = '3', `minggu6` = '3', `minggu7` = '3', `minggu8` = '3', `minggu9` = '3', `minggu10` = '3', `minggu11` = '3' WHERE `data_minggu`.`kd_minggu` = 2; ");
         }
+        
+
         
     }
 ?>
