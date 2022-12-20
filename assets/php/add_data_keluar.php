@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="..\css\add_data_style.css">
 </head>
 <body>
 <?php
@@ -17,7 +18,7 @@
     if($akses_id=='1'){
   ?>
     <h3>Tambah Data Peminjam</h3>
-    <form action="simpan_data_keluar.php" method='POST'>
+    <form action="simpan_data_keluar.php" method='POST' class="form">
         <table>
             <tr>
                 <td>nomor</td>
