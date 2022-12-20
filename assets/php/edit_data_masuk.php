@@ -18,7 +18,6 @@
     <form action="simpan_edit_data_masuk.php?id=<?php echo $kode_peminjam; ?>" method='POST' class="form">
         <table>
             <tr>
-            <tr>
             <td>
             <label for="name">Nama Pembayar</label>
             <select name="kd_minggu" id="kd_minggu" class="form__input">
@@ -27,7 +26,6 @@
                 ?>
                 </select>      
                 </td>
-            </tr>
             </tr>
             <tr>
             <td>
