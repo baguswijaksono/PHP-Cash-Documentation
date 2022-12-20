@@ -15,16 +15,18 @@
         $kode_peminjam = $_GET['id'];
         $nama = substr($kode_peminjam,2,1);
         $nama1 = substr($kode_peminjam,4,1);
+        $nama2 = substr($kode_peminjam,6,1);
+        $nama3 = substr($kode_peminjam,8,1);
     }
-        //aturan kode transaksi = 4010201
+        //aturan kode transaksi = 401020101
     ?>
-    <h3>Tambah Data Peminjam</h3>
+    <h3>Edit Data Peminjam</h3>
     <form action="simpan_data_riyawat.php" method='POST' class="form">
         <table>
         <tr>
             <td>
             <label for="name">Kode Transaksi</label>
-            <select name="kd_minggu" id="kd_riwayat" class="form__input">
+            <select name="kd_riwayat" id="kd_riwayat" class="form__input">
                 <?php
                 echo "<option value='$kode_peminjam'>$kode_peminjam</option>";
                 ?>
@@ -90,20 +92,170 @@
                 <select name="kd_penerima" id="kd_penerima" class="form__input">
                 <?php
     if ($nama1 == 1) {
-    echo "<option value='$nama'>Nandya Nurmala</option>";
+    echo "<option value='$nama1'>Nandya Nurmala</option>";
   } elseif ($nama1 == 2) {
-    echo "<option value='$nama'>Bagus Muhammd Wijaksono</option>";
+    echo "<option value='$nama1'>Bagus Muhammd Wijaksono</option>";
   } ?>
                 </select>      
                 </td>
             </tr>
             <tr>
-                <td>Metode </td>
-                <td><input type="text" name="kd_metode"></td>
+            <td>
+            <label for="name">Metode Pembayaran</label>
+                <select name="kd_metode" id="kd_metode" class="form__input">
+                <?php
+    if ($nama2 == 1) {
+    echo "<option value='$nama2'>Tunai</option>";
+  } elseif ($nama2 == 2) {
+    echo "<option value='$nama2'>Gopay</option>";
+  }elseif ($nama2 == 3) {
+    echo "<option value='$nama2'>Dana</option>";
+  }elseif ($nama2 == 4) {
+    echo "<option value='$nama2'>Ovo</option>";
+  } ?>
+                </select>      
+                </td>
             </tr>
             <tr>
-                <td>Pembayaran Untuk </td>
-                <td><input type="text" name="kd_minggu"></td>
+            <td>
+            <label for="name">Pembayaran Untuk Minggu</label>
+                <select name="kd_minggu" id="kd_minggu" class="form__input">
+                <?php
+    if ($nama3 == 1) {
+    echo "<option value='$nama3'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  } elseif ($nama3 == 2) {
+    echo "<option value='$nama3'>Minggu 2</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 3) {
+    echo "<option value='$nama3'>Minggu 3</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 4) {
+    echo "<option value='$nama3'>Minggu 4</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 5) {
+    echo "<option value='$nama3'>Minggu 5</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 6) {
+    echo "<option value='$nama3'>Minggu 6</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 7) {
+    echo "<option value='$nama3'>Minggu 7</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 8) {
+    echo "<option value='$nama3'>Minggu 8</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 9) {
+    echo "<option value='$nama3'>Minggu 9</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='10'>Minggu 10</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 10) {
+    echo "<option value='$nama3'>Minggu 10</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='11'>Minggu 11</option>";
+  }elseif ($nama3 == 11) {
+    echo "<option value='$nama3'>Minggu 11</option>";
+    echo "<option value='1'>Minggu 1</option>";
+    echo "<option value='2'>Minggu 2</option>";
+    echo "<option value='3'>Minggu 3</option>";
+    echo "<option value='4'>Minggu 4</option>";
+    echo "<option value='5'>Minggu 5</option>";
+    echo "<option value='6'>Minggu 6</option>";
+    echo "<option value='7'>Minggu 7</option>";
+    echo "<option value='8'>Minggu 8</option>";
+    echo "<option value='9'>Minggu 9</option>";
+    echo "<option value='10'>Minggu 10</option>";
+  } ?>
+                </select>      
+                </td>
             </tr>
             <tr>
                 <td>Jumlah </td>
