@@ -79,7 +79,7 @@ nav ul li a{
         <nav>
             <img src="assets/img/planetX-logo.png" alt="" class="logo">
             <ul>
-                <li><a href="add_data_riwayat.php">Tambah Riwayat</a></li>
+                <li><a href="payment_history_admin.php">Lihat Riwayat</a></li>
                 <li><a href="table_admin.php">Lihat Kas Masuk</a></li>
                 <li><a href="assets/php/cash.php">Cash</a></li>
                 <li><a href="logout.php">Logout</a></li>
@@ -88,7 +88,7 @@ nav ul li a{
 <center>
     <h1>Selamat Datang di Dashboard<br>Administrators</h1>
     <a href="add_data_masuk.php"><button type="button">Menambah Data</button></a>
-    <a href="modify_data.php"><button type="button">Mengubah Data</button></a>
+    <a href="add_data_riwayat.php"><button type="button">Menambah Riwayat</button></a>
 </body>
 </html>
 <?php

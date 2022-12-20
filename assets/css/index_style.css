@@ -9,9 +9,9 @@
     width: 100%;
     background-color: #000;
     background-image: url(../img/guest.jpg);
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 100%;
     color: white;
     padding: 0 8%;
 }
