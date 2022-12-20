@@ -13,7 +13,7 @@
     $db = new Database();
     ?>
     <h3>Tambah Data Peminjam</h3>
-    <form action="simpan_data.php" method='POST' class="form">
+    <form action="simpan_data_riyawat.php" method='POST' class="form">
         <table>
             <tr>
                 <td>Kode Transaksi</td>
@@ -26,10 +26,6 @@
             <tr>
                 <td>Nama Penerima</td>
                 <td><input type="text" name="kd_penerima"></td>
-            </tr>
-            <tr>
-                <td>Tanggal</td>
-                <td><input type="date" name="tgl"></td>
             </tr>
             <tr>
                 <td>Metode </td>

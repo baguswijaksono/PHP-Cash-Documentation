@@ -19,6 +19,8 @@
         <th>Pembayaran Untuk</th>
         <th>Jumlah</th>
         <th>Status</th>
+        <th>Edit</th>
+        <th>Hapus</th>
       </tr>
     </thead>
     <tbody>
@@ -43,10 +45,6 @@
         </td>
         <td>
           <?php 
-          echo $x['tgl']; ?>
-        </td>
-        <td>
-          <?php 
           echo $x['nama_metode']; ?>
         </td>
         <td>
@@ -62,6 +60,12 @@
         <td>
           <?php 
           echo $x['nama_status']; ?>
+        </td>
+        <td>
+        <a href="edit_data_riwayat.php?id=<?php echo $x['kd_riwayat']; ?>">Edit</a>
+        </td>
+        <td>
+        <a href="hapus_data.riwayat.php?id=<?php echo $x['kd_riwayat']; ?>">Hapus</a>
         </td>
       </tr>
       <?php
