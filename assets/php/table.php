@@ -34,10 +34,6 @@
           echo $x['kd_minggu']; ?>
         </td>
         <td>
-          <?php 
-          echo $x['tgl']; ?>
-        </td>
-        <td>
         <?php echo $x['nama_pembayar']; ?>
         </td>
         <?php 

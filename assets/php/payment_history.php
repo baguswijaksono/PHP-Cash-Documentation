@@ -43,10 +43,6 @@
         </td>
         <td>
           <?php 
-          echo $x['tgl']; ?>
-        </td>
-        <td>
-          <?php 
           echo $x['nama_metode']; ?>
         </td>
         <td>

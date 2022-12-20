@@ -104,6 +104,14 @@
         {
             mysqli_query($this->koneksi,"UPDATE `riwayat_kas` SET `kd_riwayat` = '$kd_riwayat', `kd_pembayar` = '$kd_pembayar', `kd_penerima` = '$kd_penerima', `kd_metode` = '$kd_metode', `kd_minggu` = '$kd_minggu', `kd_jumlah` = '$kd_jumlah', `kd_status` = '$kd_status' WHERE `riwayat_kas`.`kd_riwayat` = '$index'; ");
         }
+        function hapus_data_keluar($index)
+        {
+            mysqli_query($this->koneksi,"DELETE FROM kaskeluar WHERE nomor='$index';");
+        }
+        function tambah_data_in($nomor,$rincian ,$jumlah_pengeluaran)
+        {
+            mysqli_query($this->koneksi,"INSERT INTO `kaskeluar` (`nomor`, `rincian`, `jumlah_pengeluaran`) VALUES ('$nomor', '$rincian', '$jumlah_pengeluaran');");
+        }
         
     }
 ?>

@@ -22,7 +22,7 @@
         </nav>
 <center>
     <h1>Dynamic Web Programming <br>Final Project.</h1>
-    <a href="table.php"><button type="button">Cash In Information</button></a>
-    <a href="table_out.php"><button type="button">Cash Out Information</button></a>
+    <a href="table.php"><button type="button">Informasi Kas Masuk</button></a>
+    <a href="table_out.php"><button type="button">Informasi Kas Keluar</button></a>
 </body>
 </html>

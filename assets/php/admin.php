@@ -81,14 +81,14 @@ nav ul li a{
             <ul>
                 <li><a href="payment_history_admin.php">Lihat Riwayat</a></li>
                 <li><a href="table_admin.php">Lihat Kas Masuk</a></li>
-                <li><a href="assets/php/cash.php">Cash</a></li>
+                <li><a href="table_out_admin.php">Lihat Kas Keluar</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
 <center>
     <h1>Selamat Datang di Dashboard<br>Administrators</h1>
     <a href="add_data_masuk.php"><button type="button">Menambah Data</button></a>
-    <a href="add_data_riwayat.php"><button type="button">Menambah Riwayat</button></a>
+    <a href="add_data_riwayat.php"><button type="button">Modifikasi Data</button></a>
 </body>
 </html>
 <?php
