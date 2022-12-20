@@ -49,50 +49,50 @@
             <label for="name">Nama Pembayar</label>
                 <select name="kd_pembayar" id="kd_pembayar" class="form__input">
                 <?php
-    if ($nama == 1) {
-    echo "<option value='$nama'>Ade Prasetyo</option>";
-  } elseif ($nama == 2) {
-    echo "<option value='$nama'>Afifah Naura Kamilia</option>";
-  } elseif ($nama == 3) {
-    echo "<option value='$nama'>Agustinus Ricad Simbolon</option>";
-  }elseif ($nama == 4) {
-    echo "<option value='$nama'>Annisa Aisyah Amini Nur Rohmah</option>";
-  }elseif ($nama == 5) {
-    echo "<option value='$nama'>Azyumi Azra</option>";
-  }elseif ($nama == 6) {
-    echo "<option value='$nama'>Bagus Muhammad Wijaksono</option>";
-  }elseif ($nama == 7) {
-    echo "<option value='$nama'>Dewi Maharani</option>";
-  }elseif ($nama == 8) {
-    echo "<option value='$nama'>Dwi Krisnandi</option>";
-  }elseif ($nama == 9) {
-    echo "<option value='$nama'>Faris Adhi Laksana Yusuf</option>";
-  }elseif ($nama == 10) {
-    echo "<option value='$nama'>Febrian Giovanni</option>";
-  }elseif ($nama == 11) {
-    echo "<option value='$nama'>Ferina Ayu Fella Puspita</option>";
-  }elseif ($nama == 12) {
-    echo "<option value='$nama'>Kanya Audy Prahmadyta</option>";
-  }elseif ($nama == 13) {
-    echo "<option value='$nama'>Maulana Arya Yoga Juliansyah</option>";
-  }elseif ($nama == 14) {
-    echo "<option value='$nama'>Muhammad Naufal Yesha Rendra</option>";
-  }elseif ($nama == 15) {
-    echo "<option value='$nama'>Nabilla Syaharani Putri S</option>";
-  }elseif ($nama == 16) {
-    echo "<option value='$nama'>Nandya Nurmala</option>";
-  }elseif ($nama == 17) {
-    echo "<option value='$nama'>Putri Ayu Widyaningrum</option>";
-  }elseif ($nama == 18) {
-    echo "<option value='$nama'>Raihana Khalika Putri</option>";
-  }elseif ($nama == 19) {
-    echo "<option value='$nama'>Salma Afdhila Khalda</option>";
-  }elseif ($nama == 20) {
-    echo "<option value='$nama'>Syalita Widyandini</option>";
-  }elseif ($nama == 21) {
-    echo "<option value='$nama'>Vannisa Ardiani</option>";
-  }elseif ($nama == 22) {
-    echo "<option value='$nama'>Yudha Zaniargo</option>";
+    if ($nama4 == 1) {
+    echo "<option value='$nama4'>Ade Prasetyo</option>";
+  } elseif ($nama4 == 2) {
+    echo "<option value='$nama4'>Afifah Naura Kamilia</option>";
+  } elseif ($nama4 == 3) {
+    echo "<option value='$nama4'>Agustinus Ricad Simbolon</option>";
+  }elseif ($nama4 == 4) {
+    echo "<option value='$nama4'>Annisa Aisyah Amini Nur Rohmah</option>";
+  }elseif ($nama4 == 5) {
+    echo "<option value='$nama4'>Azyumi Azra</option>";
+  }elseif ($nama4 == 6) {
+    echo "<option value='$nama4'>Bagus Muhammad Wijaksono</option>";
+  }elseif ($nama4 == 7) {
+    echo "<option value='$nama4'>Dewi Maharani</option>";
+  }elseif ($nama4 == 8) {
+    echo "<option value='$nama4'>Dwi Krisnandi</option>";
+  }elseif ($nama4 == 9) {
+    echo "<option value='$nama4'>Faris Adhi Laksana Yusuf</option>";
+  }elseif ($nama4 == 10) {
+    echo "<option value='$nama4'>Febrian Giovanni</option>";
+  }elseif ($nama4 == 11) {
+    echo "<option value='$nama4'>Ferina Ayu Fella Puspita</option>";
+  }elseif ($nama4 == 12) {
+    echo "<option value='$nama4'>Kanya Audy Prahmadyta</option>";
+  }elseif ($nama4 == 13) {
+    echo "<option value='$nama4'>Maulana Arya Yoga Juliansyah</option>";
+  }elseif ($nama4 == 14) {
+    echo "<option value='$nama4'>Muhammad Naufal Yesha Rendra</option>";
+  }elseif ($nama4 == 15) {
+    echo "<option value='$nama4'>Nabilla Syaharani Putri S</option>";
+  }elseif ($nama4 == 16) {
+    echo "<option value='$nama4'>Nandya Nurmala</option>";
+  }elseif ($nama4 == 17) {
+    echo "<option value='$nama4'>Putri Ayu Widyaningrum</option>";
+  }elseif ($nama4 == 18) {
+    echo "<option value='$nama4'>Raihana Khalika Putri</option>";
+  }elseif ($nama4 == 19) {
+    echo "<option value='$nama4'>Salma Afdhila Khalda</option>";
+  }elseif ($nama4 == 20) {
+    echo "<option value='$nama4'>Syalita Widyandini</option>";
+  }elseif ($nama4 == 21) {
+    echo "<option value='$nama4'>Vannisa Ardiani</option>";
+  }elseif ($nama4 == 22) {
+    echo "<option value='$nama4'>Yudha Zaniargo</option>";
   }?>
                 </select>      
                 </td>
@@ -102,10 +102,10 @@
             <label for="name">Nama Penerima</label>
                 <select name="kd_penerima" id="kd_penerima" class="form__input">
                 <?php
-    if ($nama1 == 1) {
-    echo "<option value='$nama1'>Nandya Nurmala</option>";
-  } elseif ($nama1 == 2) {
-    echo "<option value='$nama1'>Bagus Muhammd Wijaksono</option>";
+    if ($nama == 1) {
+    echo "<option value='$nama'>Nandya Nurmala</option>";
+  } elseif ($nama == 2) {
+    echo "<option value='$nama'>Bagus Muhammd Wijaksono</option>";
   } ?>
                 </select>      
                 </td>
