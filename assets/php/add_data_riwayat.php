@@ -18,7 +18,7 @@
     if($akses_id=='1'){
   ?>
     <h3>Tambah Data Peminjam</h3>
-    <form action="simpan_data_riyawat.php" method='POST' class="form">
+    <form action="simpan_data_riwayat.php" method='POST' class="form">
         <table>
             <tr>
                 <td>Kode Transaksi</td>
