@@ -9,8 +9,18 @@
 </head>
 <body>
 <?php
+
+  ?>
+<?php
+    session_start();
+    $username = $_SESSION['username'];
     include 'config.php';
     $db = new Database();
+    foreach($db->login_admin($username) as $x){
+      $akses_id = $x['akses_id'];
+      if($akses_id=='1'){
+        ?>
+        <?php
     if(isset($_GET['id'])){
         $kode_peminjam = $_GET['id'];
         $nama = substr($kode_peminjam,2,1);
@@ -273,3 +283,11 @@
     </form>
 </body>
 </html>
+<?php
+        }
+        else{
+            echo "Anda belum login";
+            header("Location: login.php");
+        }
+    }
+?>

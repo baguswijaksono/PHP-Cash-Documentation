@@ -7,10 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    include 'config.php';
-    $db = new Database();
-    ?>
+<?php
+    session_start();
+    $username = $_SESSION['username'];
+  include 'config.php';
+  $db = new Database();
+  foreach($db->login_admin($username) as $x){
+    $akses_id = $x['akses_id'];
+    if($akses_id=='1'){
+  ?>
     <h3>Tambah Data Peminjam</h3>
     <form action="simpan_data_keluar.php" method='POST'>
         <table>
@@ -46,3 +51,11 @@
     </form>
 </body>
 </html>
+<?php
+        }
+        else{
+            echo "Anda belum login";
+            header("Location: login.php");
+        }
+    }
+?>

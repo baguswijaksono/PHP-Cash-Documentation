@@ -6,8 +6,13 @@
 </head>
 <body>
 <?php
+    session_start();
+    $username = $_SESSION['username'];
   include 'config.php';
   $db = new Database();
+  foreach($db->login_admin($username) as $x){
+    $akses_id = $x['akses_id'];
+    if($akses_id=='1'){
   ?>
   <table>
     <thead>
@@ -69,3 +74,11 @@
     </tbody>
   </table>
 </body>
+<?php
+        }
+        else{
+            echo "Anda belum login";
+            header("Location: login.php");
+        }
+    }
+?>

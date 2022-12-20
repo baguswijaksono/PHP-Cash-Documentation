@@ -17,6 +17,7 @@
         <th>Jumlah</th>
         <th>Debit</th>
         <th>Saldo</th>
+        <th>Keterangan</th>
       </tr>
     </thead>
     <tbody>
@@ -36,8 +37,24 @@
         <td>
         <?php echo $x['jumlah_pengeluaran']; ?>
         </td>
+        <td>
+        <?php 
+        echo "Rp.";
+        echo $x['debit']; 
+        echo ",00";
+        ?>
+        </td>
+        <td>
+        <?php 
+        echo "Rp.";
+        echo $x['saldo']; 
+        echo ",00";
+        ?>
+        </td>
+        <td>
+        <?php echo $x['keterangan']; ?>
+        </td>
       </tr>
-
       <?php
       }
       ?>

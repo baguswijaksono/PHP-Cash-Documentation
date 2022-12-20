@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="..\css\add_data_style.css">
 </head>
 <body>
-    <?php
-    include 'config.php';
-    $db = new Database();
-    ?>
+<?php
+    session_start();
+    $username = $_SESSION['username'];
+  include 'config.php';
+  $db = new Database();
+  foreach($db->login_admin($username) as $x){
+    $akses_id = $x['akses_id'];
+    if($akses_id=='1'){
+  ?>
     <h3>Tambah Data Kas Masuk</h3>
     <form action="simpan_data.php" method='POST' class="form">
         <table>
@@ -170,3 +175,11 @@
     </form>
 </body>
 </html>
+<?php
+        }
+        else{
+            echo "Anda belum login";
+            header("Location: login.php");
+        }
+    }
+?>

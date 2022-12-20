@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="..\css\add_data_style.css">
 </head>
 <body>
-    <?php
-    include 'config.php';
-    $db = new Database();
-    if(isset($_GET['id'])){
-        $kode_peminjam = $_GET['id'];}
-    ?>
+<?php
+    session_start();
+    $username = $_SESSION['username'];
+  include 'config.php';
+  $db = new Database();
+  if(isset($_GET['id'])){
+    $kode_peminjam = $_GET['id'];}
+  foreach($db->login_admin($username) as $x){
+    $akses_id = $x['akses_id'];
+    if($akses_id=='1'){
+  ?>
     <h3>Tambah Data Peminjam</h3>
     <form action="simpan_edit_data_masuk.php?id=<?php echo $kode_peminjam; ?>" method='POST' class="form">
         <table>
@@ -259,3 +264,11 @@
     </form>
 </body>
 </html>
+<?php
+        }
+        else{
+            echo "Anda belum login";
+            header("Location: login.php");
+        }
+    }
+?>

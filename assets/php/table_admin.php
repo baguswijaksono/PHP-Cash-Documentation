@@ -4,9 +4,14 @@
   <link rel="stylesheet" href="../css/table_style.css">
 </head>
 <body>
-  <?php
+<?php
+    session_start();
+    $username = $_SESSION['username'];
   include 'config.php';
   $db = new Database();
+  foreach($db->login_admin($username) as $x){
+    $akses_id = $x['akses_id'];
+    if($akses_id=='1'){
   ?>
   <table >
       <tr>
@@ -62,3 +67,11 @@
       ?>
   </table>
 </body>
+<?php
+        }
+        else{
+            echo "Anda belum login";
+            header("Location: login.php");
+        }
+    }
+?>
