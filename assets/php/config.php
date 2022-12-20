@@ -96,6 +96,14 @@
         {
             mysqli_query($this->koneksi,"INSERT INTO `riwayat_kas` (`kd_riwayat`, `kd_pembayar`, `kd_penerima`,`kd_metode`, `kd_minggu`, `kd_jumlah`, `kd_status`) VALUES ('$kd_riwayat','$kd_pembayar','$kd_penerima','$kd_metode','$kd_minggu','$kd_jumlah','$kd_status');");
         }
+        function hapus_data_riwayat($kd_riwayat)
+        {
+            mysqli_query($this->koneksi,"DELETE FROM riwayat_kas WHERE `riwayat_kas`.`kd_riwayat` = $kd_riwayat");
+        }
+        function edit_data_riwayat($kd_riwayat,$kd_pembayar,$kd_penerima,$kd_metode,$kd_minggu,$kd_jumlah,$kd_status,$index)
+        {
+            mysqli_query($this->koneksi,"UPDATE `riwayat_kas` SET `kd_riwayat` = '$kd_riwayat', `kd_pembayar` = '$kd_pembayar', `kd_penerima` = '$kd_penerima', `kd_metode` = '$kd_metode', `kd_minggu` = '$kd_minggu', `kd_jumlah` = '$kd_jumlah', `kd_status` = '$kd_status' WHERE `riwayat_kas`.`kd_riwayat` = '$index'; ");
+        }
         
     }
 ?>
