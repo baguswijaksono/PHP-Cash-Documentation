@@ -14,7 +14,6 @@
         <th>Kode Transaksi</th>
         <th>Nama Pembayar</th>
         <th>Nama Penerima</th>
-        <th>Tanggal Diterima</th>
         <th>Metode Pembayaran</th>
         <th>Pembayaran Untuk</th>
         <th>Jumlah</th>

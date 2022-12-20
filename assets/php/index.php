@@ -14,7 +14,6 @@
         <nav>
             <img src="assets/img/planetX-logo.png" alt="" class="logo">
             <ul>
-                <li><a href="payment_method.php">Payment</a></li>
                 <li><a href="payment_history.php">History</a></li>
                 <li><a href="cash.php">Cash</a></li>
                 <li><a href="login.php">Login</a></li>

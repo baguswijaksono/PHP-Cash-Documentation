@@ -108,9 +108,9 @@
         {
             mysqli_query($this->koneksi,"DELETE FROM kaskeluar WHERE nomor='$index';");
         }
-        function tambah_data_out($nomor,$rincian ,$jumlah_pengeluaran)
+        function data_out($a,$b,$c,$d,$e,$f)
         {
-            mysqli_query($this->koneksi,"INSERT INTO `kaskeluar` (`nomor`, `rincian`, `jumlah_pengeluaran`) VALUES ('$nomor', '$rincian', '$jumlah_pengeluaran');");
+            mysqli_query($this->koneksi,"INSERT INTO `kaskeluar` (`nomor`, `rincian`, `jumlah_pengeluaran`, `debit`, `saldo`, `keterangan`) VALUES ($a,$b,$c,$d,$e,$f);");
         }
         
     }

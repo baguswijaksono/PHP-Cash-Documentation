@@ -13,13 +13,11 @@
     <thead>
       <tr>
         <th>Nomor</th>
-        <th>Tanggal</th>
         <th>Rincian</th>
         <th>Jumlah</th>
         <th>Debit</th>
-        <th>Kredit</th>
         <th>Saldo</th>
-        <th>Bukti</th>
+        <th>Keterangan</th>
         <th>Edit</th>
         <th>Hapus</th>
       </tr>
@@ -40,6 +38,23 @@
         </td>
         <td>
         <?php echo $x['jumlah_pengeluaran']; ?>
+        </td>
+        <td>
+        <?php 
+        echo "Rp.";
+        echo $x['debit']; 
+        echo ",00";
+        ?>
+        </td>
+        <td>
+        <?php 
+        echo "Rp.";
+        echo $x['saldo']; 
+        echo ",00";
+        ?>
+        </td>
+        <td>
+        <?php echo $x['keterangan']; ?>
         </td>
         <td>
         <a href="edit_data_keluar.php?id=<?php echo $x['nomor']; ?>">Edit</a>

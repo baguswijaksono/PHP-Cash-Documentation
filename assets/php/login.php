@@ -11,7 +11,7 @@
         <input id="password" type="password" name="password" class="form__input" placeholder="Password" required>
       </div>
       <div class="form__field">
-        <input type="submit">
+        <input type="submit" value="Login">
       </div>
     </form>
   </div>
