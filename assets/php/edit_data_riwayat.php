@@ -12,7 +12,11 @@
     include 'config.php';
     $db = new Database();
     if(isset($_GET['id'])){
-        $kode_peminjam = $_GET['id'];}
+        $kode_peminjam = $_GET['id'];
+        $nama = substr($kode_peminjam,2,1);
+        $nama1 = substr($kode_peminjam,4,1);
+    }
+        //aturan kode transaksi = 4010201
     ?>
     <h3>Tambah Data Peminjam</h3>
     <form action="simpan_data_riyawat.php" method='POST' class="form">
@@ -29,59 +33,69 @@
             </tr>
             <tr>
             <td>
+            <label for="name">Nama Pembayar</label>
                 <select name="kd_pembayar" id="kd_pembayar" class="form__input">
                 <?php
-    if ($kode_peminjam == 1) {
-    echo "<option value='$kode_peminjam'>Ade Prasetyo</option>";
-  } elseif ($kode_peminjam == 2) {
-    echo "<option value='$kode_peminjam'>Afifah Naura Kamilia</option>";
-  } elseif ($kode_peminjam == 3) {
-    echo "<option value='$kode_peminjam'>Agustinus Ricad Simbolon</option>";
-  }elseif ($kode_peminjam == 4) {
-    echo "<option value='$kode_peminjam'>Annisa Aisyah Amini Nur Rohmah</option>";
-  }elseif ($kode_peminjam == 5) {
-    echo "<option value='$kode_peminjam'>Azyumi Azra</option>";
-  }elseif ($kode_peminjam == 6) {
-    echo "<option value='$kode_peminjam'>Bagus Muhammad Wijaksono</option>";
-  }elseif ($kode_peminjam == 7) {
-    echo "<option value='$kode_peminjam'>Dewi Maharani</option>";
-  }elseif ($kode_peminjam == 8) {
-    echo "<option value='$kode_peminjam'>Dwi Krisnandi</option>";
-  }elseif ($kode_peminjam == 9) {
-    echo "<option value='$kode_peminjam'>Faris Adhi Laksana Yusuf</option>";
-  }elseif ($kode_peminjam == 10) {
-    echo "<option value='$kode_peminjam'>Febrian Giovanni</option>";
-  }elseif ($kode_peminjam == 11) {
-    echo "<option value='$kode_peminjam'>Ferina Ayu Fella Puspita</option>";
-  }elseif ($kode_peminjam == 12) {
-    echo "<option value='$kode_peminjam'>Kanya Audy Prahmadyta</option>";
-  }elseif ($kode_peminjam == 13) {
-    echo "<option value='$kode_peminjam'>Maulana Arya Yoga Juliansyah</option>";
-  }elseif ($kode_peminjam == 14) {
-    echo "<option value='$kode_peminjam'>Muhammad Naufal Yesha Rendra</option>";
-  }elseif ($kode_peminjam == 15) {
-    echo "<option value='$kode_peminjam'>Nabilla Syaharani Putri S</option>";
-  }elseif ($kode_peminjam == 16) {
-    echo "<option value='$kode_peminjam'>Nandya Nurmala</option>";
-  }elseif ($kode_peminjam == 17) {
-    echo "<option value='$kode_peminjam'>Putri Ayu Widyaningrum</option>";
-  }elseif ($kode_peminjam == 18) {
-    echo "<option value='$kode_peminjam'>Raihana Khalika Putri</option>";
-  }elseif ($kode_peminjam == 19) {
-    echo "<option value='$kode_peminjam'>Salma Afdhila Khalda</option>";
-  }elseif ($kode_peminjam == 20) {
-    echo "<option value='$kode_peminjam'>Syalita Widyandini</option>";
-  }elseif ($kode_peminjam == 21) {
-    echo "<option value='$kode_peminjam'>Vannisa Ardiani</option>";
-  }elseif ($kode_peminjam == 22) {
-    echo "<option value='$kode_peminjam'>Yudha Zaniargo</option>";
+    if ($nama == 1) {
+    echo "<option value='$nama'>Ade Prasetyo</option>";
+  } elseif ($nama == 2) {
+    echo "<option value='$nama'>Afifah Naura Kamilia</option>";
+  } elseif ($nama == 3) {
+    echo "<option value='$nama'>Agustinus Ricad Simbolon</option>";
+  }elseif ($nama == 4) {
+    echo "<option value='$nama'>Annisa Aisyah Amini Nur Rohmah</option>";
+  }elseif ($nama == 5) {
+    echo "<option value='$nama'>Azyumi Azra</option>";
+  }elseif ($nama == 6) {
+    echo "<option value='$nama'>Bagus Muhammad Wijaksono</option>";
+  }elseif ($nama == 7) {
+    echo "<option value='$nama'>Dewi Maharani</option>";
+  }elseif ($nama == 8) {
+    echo "<option value='$nama'>Dwi Krisnandi</option>";
+  }elseif ($nama == 9) {
+    echo "<option value='$nama'>Faris Adhi Laksana Yusuf</option>";
+  }elseif ($nama == 10) {
+    echo "<option value='$nama'>Febrian Giovanni</option>";
+  }elseif ($nama == 11) {
+    echo "<option value='$nama'>Ferina Ayu Fella Puspita</option>";
+  }elseif ($nama == 12) {
+    echo "<option value='$nama'>Kanya Audy Prahmadyta</option>";
+  }elseif ($nama == 13) {
+    echo "<option value='$nama'>Maulana Arya Yoga Juliansyah</option>";
+  }elseif ($nama == 14) {
+    echo "<option value='$nama'>Muhammad Naufal Yesha Rendra</option>";
+  }elseif ($nama == 15) {
+    echo "<option value='$nama'>Nabilla Syaharani Putri S</option>";
+  }elseif ($nama == 16) {
+    echo "<option value='$nama'>Nandya Nurmala</option>";
+  }elseif ($nama == 17) {
+    echo "<option value='$nama'>Putri Ayu Widyaningrum</option>";
+  }elseif ($nama == 18) {
+    echo "<option value='$nama'>Raihana Khalika Putri</option>";
+  }elseif ($nama == 19) {
+    echo "<option value='$nama'>Salma Afdhila Khalda</option>";
+  }elseif ($nama == 20) {
+    echo "<option value='$nama'>Syalita Widyandini</option>";
+  }elseif ($nama == 21) {
+    echo "<option value='$nama'>Vannisa Ardiani</option>";
+  }elseif ($nama == 22) {
+    echo "<option value='$nama'>Yudha Zaniargo</option>";
   }?>
                 </select>      
                 </td>
             </tr>
             <tr>
-                <td>Nama Penerima</td>
-                <td><input type="text" name="kd_penerima"></td>
+            <td>
+            <label for="name">Nama Penerima</label>
+                <select name="kd_penerima" id="kd_penerima" class="form__input">
+                <?php
+    if ($nama1 == 1) {
+    echo "<option value='$nama'>Nandya Nurmala</option>";
+  } elseif ($nama1 == 2) {
+    echo "<option value='$nama'>Bagus Muhammd Wijaksono</option>";
+  } ?>
+                </select>      
+                </td>
             </tr>
             <tr>
                 <td>Metode </td>
