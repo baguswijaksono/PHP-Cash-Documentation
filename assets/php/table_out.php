@@ -16,9 +16,7 @@
         <th>Rincian</th>
         <th>Jumlah</th>
         <th>Debit</th>
-        <th>Kredit</th>
         <th>Saldo</th>
-        <th>Bukti</th>
       </tr>
     </thead>
     <tbody>

@@ -27,10 +27,10 @@
     min-height: 100vh;
     width: 100%;
     background-color: #000;
-    background-image: url(../img/retsu.jpg);
+    background-image: url(../img/admin.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 100%;
     color: white;
     padding: 0 8%;
 }
@@ -69,8 +69,6 @@ nav ul li a{
     letter-spacing: 1px;
     cursor: pointer;
 }
-
-
     </style>
 </head>
 <body>
@@ -86,9 +84,10 @@ nav ul li a{
             </ul>
         </nav>
 <center>
-    <h1>Selamat Datang di Dashboard<br>Administrators</h1>
-    <a href="add_data_masuk.php"><button type="button">Menambah Data</button></a>
-    <a href="add_data_riwayat.php"><button type="button">Modifikasi Data</button></a>
+    <h1>Selamat Datang di Dashboard<br>Administrator</h1>
+    <a href="add_data_masuk.php"><button type="button">Menambah Data Masuk</button></a>
+    <a href="add_data_keluar.php"><button type="button">Menambah Data Keluar</button></a>
+    <a href="add_data_keluar.php"><button type="button">Menambah Data Riwayat</button></a>
 </body>
 </html>
 <?php
