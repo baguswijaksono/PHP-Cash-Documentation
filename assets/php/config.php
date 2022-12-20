@@ -120,6 +120,10 @@
         {
             mysqli_query($this->koneksi,"INSERT INTO `kaskeluar` (`nomor`, `rincian`, `jumlah_pengeluaran`, `debit`, `saldo`, `keterangan`) VALUES ('$a','$b','$c','$d','$e','$f');");
         }
+        function edit_data_out($a,$b,$c,$d,$e,$f)
+        {
+            mysqli_query($this->koneksi,"UPDATE `kaskeluar` SET `nomor` = '$a', `rincian` = '$b', `jumlah_pengeluaran` = '$c', `debit` = '$d', `saldo` = '$e', `keterangan` = '$f' WHERE `kaskeluar`.`nomor` = $a; ");
+        }
         
     }
 ?>
