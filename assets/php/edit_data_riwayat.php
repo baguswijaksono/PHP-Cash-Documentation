@@ -23,12 +23,13 @@
         <?php
     if(isset($_GET['id'])){
         $kode_peminjam = $_GET['id'];
-        $nama = substr($kode_peminjam,2,1);
-        $nama1 = substr($kode_peminjam,4,1);
-        $nama2 = substr($kode_peminjam,6,1);
-        $nama3 = substr($kode_peminjam,8,1);
+        $nama = substr($kode_peminjam,1,1);//kode penerima
+        $nama1 = substr($kode_peminjam,2,1);// kode metode
+        $nama2 = substr($kode_peminjam,3,1);//kode jumlah
+        $nama3 = substr($kode_peminjam,4,1);//kode status
+        $nama4 = substr($kode_peminjam,5,2);//kd pembayar
+        $nama5 = substr($kode_peminjam,7,2);//kd minggu
     }
-        //aturan kode transaksi = 401020101
     ?>
     <h3>Edit Data Peminjam</h3>
     <form action="simpan_data_riyawat.php" method='POST' class="form">
@@ -268,12 +269,70 @@
                 </td>
             </tr>
             <tr>
-                <td>Jumlah </td>
-                <td><input type="text" name="kd_jumlah"></td>
+<td>
+<label for="name">Jumlah</label>
+                <select name="kd_jumlah" id="kd_jumlah" class="form__input">
+                <?php
+                    if ($nama5 == 1) {
+                      echo "<option value='$nama5'>Rp.5000,00</option>";
+                      echo "<option value='2'>Rp.10000,00</option>";
+                      echo "<option value='3'>Rp.15000,00</option>";
+                      echo "<option value='4'>Rp.20000,00</option>";
+                      echo "<option value='5'>Rp.25000,00</option>";
+                      echo "<option value='6'>Rp.30000,00</option>";
+                    } elseif ($nama5 == 2) {
+                      echo "<option value='2'>Rp.10000,00</option>";
+                      echo "<option value='1'>Rp.5000,00</option>";
+                      echo "<option value='3'>Rp.15000,00</option>";
+                      echo "<option value='4'>Rp.20000,00</option>";
+                      echo "<option value='5'>Rp.25000,00</option>";
+                      echo "<option value='6'>Rp.30000,00</option>";
+                    }elseif ($nama5 == 3) {
+                      echo "<option value='3'>Rp.15000,00</option>";
+                      echo "<option value='2'>Rp.10000,00</option>";
+                      echo "<option value='1'>Rp.5000,00</option>";
+                      echo "<option value='4'>Rp.20000,00</option>";
+                      echo "<option value='5'>Rp.25000,00</option>";
+                      echo "<option value='6'>Rp.30000,00</option>";
+                    }elseif ($nama5 == 4) {
+                      echo "<option value='4'>Rp.20000,00</option>";
+                      echo "<option value='3'>Rp.15000,00</option>";
+                      echo "<option value='2'>Rp.10000,00</option>";
+                      echo "<option value='1'>Rp.5000,00</option>";
+                      echo "<option value='5'>Rp.25000,00</option>";
+                      echo "<option value='6'>Rp.30000,00</option>";
+                    }elseif ($nama5 == 5) {
+                      echo "<option value='5'>Rp.25000,00</option>";
+                      echo "<option value='4'>Rp.20000,00</option>";
+                      echo "<option value='3'>Rp.15000,00</option>";
+                      echo "<option value='2'>Rp.10000,00</option>";
+                      echo "<option value='1'>Rp.5000,00</option>"; 
+                      echo "<option value='6'>Rp.30000,00</option>";
+                    }elseif ($nama5 == 6) {
+                      echo "<option value='6'>Rp.30000,00</option>";
+                      echo "<option value='5'>Rp.25000,00</option>";
+                      echo "<option value='4'>Rp.20000,00</option>";
+                      echo "<option value='3'>Rp.15000,00</option>";
+                      echo "<option value='2'>Rp.10000,00</option>";
+                      echo "<option value='1'>Rp.5000,00</option>"; 
+                    }
+                ?>
+</td>
             </tr>
             <tr>
-                <td>Status </td>
-                <td><input type="text" name="kd_status"></td>
+            <td>
+<label for="name">Status</label>
+                <select name="kd_status" id="kd_status" class="form__input">
+                <?php
+                    if ($nama3 == 1) {
+                      echo "<option value='1'>Lunas</option>";
+                      echo "<option value='2'>Belum Lunas</option>";
+                    } elseif ($nama3 == 2) {
+                      echo "<option value='2'>Belum Lunas</option>";
+                      echo "<option value='1'>Lunas</option>";               
+                    }
+                ?>
+</td>
             </tr>
             <tr>
                 <td>
