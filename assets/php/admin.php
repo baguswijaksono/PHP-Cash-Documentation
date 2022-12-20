@@ -87,7 +87,7 @@ nav ul li a{
     <h1>Selamat Datang di Dashboard<br>Administrator</h1>
     <a href="add_data_masuk.php"><button type="button">Menambah Data Masuk</button></a>
     <a href="add_data_keluar.php"><button type="button">Menambah Data Keluar</button></a>
-    <a href="add_data_keluar.php"><button type="button">Menambah Data Riwayat</button></a>
+    <a href="add_data_riwayat.php"><button type="button">Menambah Data Riwayat</button></a>
 </body>
 </html>
 <?php
