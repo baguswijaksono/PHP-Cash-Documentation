@@ -55,8 +55,13 @@
            ?>
         </td>
         <td>
-          <?php 
-          echo $x['nama_status']; ?>
+        <?php 
+                    if($x['nama_status'] == "Selesai"){
+            echo "<p class='status status-paid'> Lunas </p>";
+          }else{
+            echo "<p class='status status-unpaid'> n/a </p>";
+          }?>
+          
         </td>
       </tr>
       <?php

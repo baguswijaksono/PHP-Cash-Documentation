@@ -47,9 +47,11 @@
         for ($i = 1; $i < 12; $i++){
           echo "<td>";
           if($x['minggu'.$i] == "1"){
-            echo "Lunas";
+            echo "<p class='status status-paid'> Lunas </p>";
+          }elseif($x['minggu'.$i] == "3"){
+            echo "<p class='status status-pending'> n/a </p>";
           }else{
-            echo "Belum Lunas";
+            echo "<p class='status status-unpaid'> Belum </p>";
           }
           echo "</td>";
         }

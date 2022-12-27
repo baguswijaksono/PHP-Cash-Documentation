@@ -23,7 +23,6 @@
         <th>Pembayaran Untuk</th>
         <th>Jumlah</th>
         <th>Status</th>
-        <th>Edit</th>
         <th>Hapus</th>
       </tr>
     </thead>
@@ -63,10 +62,12 @@
         </td>
         <td>
           <?php 
-          echo $x['nama_status']; ?>
-        </td>
-        <td>
-        <a href="edit_data_riwayat.php?id=<?php echo $x['kd_riwayat']; ?>">Edit</a>
+                    if($x['nama_status'] == "Selesai"){
+            echo "<p class='status status-paid'> Lunas </p>";
+          }else{
+            echo "<p class='status status-unpaid'> n/a </p>";
+          }?>
+          
         </td>
         <td>
         <a href="hapus_data_riwayat.php?id=<?php echo $x['kd_riwayat']; ?>">Hapus</a>

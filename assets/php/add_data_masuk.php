@@ -23,7 +23,7 @@
             <tr>
             <tr>
             <td>
-            <label for="name">NIM</label>
+            <label for="kd_minggu">Nomor Absen</label>
             <select name="kd_minggu" id="kd_minggu" class="form__input">
             <option value="1">1</option>
               <option value="2">2</option>
@@ -53,6 +53,7 @@
             </tr>
             <tr>
             <td>
+            <label>Nama</label>
                 <select name="kd_pembayar" id="kd_pembayar" class="form__input">
                 <option value="1">Ade Prasetyo</option>
               <option value="2">Afifah Naura Kamilia</option>
@@ -81,89 +82,112 @@
             </tr>
             <tr>
             <td>
+            <label>Minggu 1</label>
                 <select name="minggu1" id="minggu1" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 2</label>
                 <select name="minggu2" id="minggu2" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 3</label>
                 <select name="minggu3" id="minggu3" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 4</label>
                 <select name="minggu4" id="minggu4" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 5</label>
                 <select name="minggu5" id="minggu5" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 6</label>
                 <select name="minggu6" id="minggu6" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 7</label>
                 <select name="minggu7" id="minggu7" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 8</label>
                 <select name="minggu8" id="minggu8" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
             <td>
+            <label>Minggu 9</label>
                 <select name="minggu9" id="minggu9" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
             <tr>
                 <td>
+                <label>Minggu 10</label>
                 <select name="minggu10" id="minggu10" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
+                
                 </td>
             </tr>
             <tr>
                 <td>
+                <label>Minggu 11</label>
                 <select name="minggu11" id="minggu11" class="form__input">
                 <option value="1">Lunas</option>
                 <option value="2">Belum Lunas</option>
+                <option value="3">n/a</option>
                 </select>      
                 </td>
             </tr>
