@@ -29,19 +29,19 @@
                 <td><input type="text" name="rincian"></td>
             </tr>
             <tr>
-                <td>nomor</td>
+                <td>Jumlah</td>
                 <td><input type="text" name="jumlah_pengeluaran"></td>
             </tr>
             <tr>
-                <td>rincian </td>
+                <td>Debit </td>
                 <td><input type="text" name="debit"></td>
             </tr>
             <tr>
-                <td>nomor</td>
+                <td>Saldo</td>
                 <td><input type="text" name="saldo"></td>
             </tr>
             <tr>
-                <td>rincian </td>
+                <td>Keterangan </td>
                 <td><input type="text" name="keterangan"></td>
             </tr>
             <tr>
