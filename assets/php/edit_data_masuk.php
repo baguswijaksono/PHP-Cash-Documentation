@@ -19,12 +19,12 @@
     $akses_id = $x['akses_id'];
     if($akses_id=='1'){
   ?>
-    <h3>Tambah Data Peminjam</h3>
+    <h3>Edit Data Peminjam</h3>
     <form action="simpan_edit_data_masuk.php?id=<?php echo $kode_peminjam; ?>" method='POST' class="form">
         <table>
             <tr>
             <td>
-            <label for="name">Nama Pembayar</label>
+            <label for="name">Nomor Absen</label>
             <select name="kd_minggu" id="kd_minggu" class="form__input">
                 <?php
                 echo "<option value='$kode_peminjam'>$kode_peminjam</option>";
@@ -33,7 +33,7 @@
                 </td>
             </tr>
             <tr>
-            <td>
+            <td>            <label>Nama</label>
                 <select name="kd_pembayar" id="kd_pembayar" class="form__input">
                 <?php
     if ($kode_peminjam == 1) {
@@ -91,12 +91,19 @@
       ?> 
       <tr>
             <td>
+            <label>Minggu 1</label>
                 <select name="minggu1" id="minggu1" class="form__input">
                     <?php
                     if($x['minggu1']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu1']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -106,12 +113,19 @@
                 </tr>
                 <tr>
             <td>
+            <label>Minggu 2</label>
                 <select name="minggu2" id="minggu2" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu2']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu2']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -121,12 +135,19 @@
                 </tr>
                 <tr>
             <td>
-                <select name="minggu3" id="minggu3" class="form__input">
-                    <?php
+            <label>Minggu 3</label>
+            <select name="minggu3" id="minggu3" class="form__input">
+            <?php
                     if($x['minggu3']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu3']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -136,12 +157,19 @@
                 </tr>
                 <tr>
             <td>
+            <label>Minggu 4</label>
                 <select name="minggu4" id="minggu4" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu4']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu4']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -151,12 +179,19 @@
                 </tr>
                 <tr>
             <td>
+            <label>Minggu 5</label>
                 <select name="minggu5" id="minggu5" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu5']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu5']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -166,12 +201,19 @@
                 </tr>
                 <tr>
             <td>
+            <label>Minggu 6</label>
                 <select name="minggu6" id="minggu6" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu6']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu6']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -181,12 +223,19 @@
                 </tr>
                 <tr>
             <td>
+            <label>Minggu 7</label>
                 <select name="minggu7" id="minggu7" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu7']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu7']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -195,12 +244,19 @@
                 </td>
                 </tr>      <tr>
             <td>
+            <label>Minggu 8</label>
                 <select name="minggu8" id="minggu8" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu8']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu8']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -210,12 +266,19 @@
                 </tr>
                 <tr>
             <td>
+            <label>Minggu 9</label>
                 <select name="minggu9" id="minggu9" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu9']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu9']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -225,12 +288,19 @@
                 </tr>
                 <tr>
             <td>
+            <label>Minggu 10</label>
                 <select name="minggu10" id="minggu10" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu10']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu10']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }
@@ -239,13 +309,19 @@
                 </td>
                 </tr>
                 <tr>
-            <td>
+            <td><label>Minggu 11</label>
                 <select name="minggu11" id="minggu11" class="form__input">
-                    <?php
+                <?php
                     if($x['minggu11']==1){
                         echo "<option value='1'>Lunas</option>";
                         echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
+                    }elseif($x['minggu11']==2){
+                        echo "<option value='2'>Belum Lunas</option>";
+                        echo "<option value='1'>Lunas</option>";
+                        echo "<option value='3'>n/a</option>";
                     }else{
+                        echo "<option value='3'>n/a</option>";
                         echo "<option value='2'>Belum Lunas</option>";
                         echo "<option value='1'>Lunas</option>";
                     }

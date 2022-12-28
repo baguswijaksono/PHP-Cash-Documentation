@@ -73,7 +73,7 @@
         }
         function edit_data_masuk($kd_mingguindex,$kd_minggu,$kd_pembayar,$minggu1,$minggu2,$minggu3,$minggu4,$minggu5,$minggu6,$minggu7,$minggu8,$minggu9,$minggu10,$minggu11)
         {
-            mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = $kd_minggu, `kd_pembayar` = $kd_pembayar, `minggu1` = $minggu1, `minggu2` = $minggu2, `minggu3` = $minggu3, `minggu4` = $minggu4, `minggu5` = $minggu5, `minggu6` = $minggu6, `minggu7` = $minggu7, `minggu8` = $minggu8, `minggu9` = $minggu9, `minggu10` = $minggu10, `minggu11` = $minggu1 WHERE `data_minggu`.`kd_minggu` = $kd_mingguindex; ");
+            mysqli_query($this->koneksi,"UPDATE `data_minggu` SET `kd_minggu` = $kd_minggu, `kd_pembayar` = $kd_pembayar, `minggu1` = $minggu1, `minggu2` = $minggu2, `minggu3` = $minggu3, `minggu4` = $minggu4, `minggu5` = $minggu5, `minggu6` = $minggu6, `minggu7` = $minggu7, `minggu8` = $minggu8, `minggu9` = $minggu9, `minggu10` = $minggu10, `minggu11` = $minggu11 WHERE `data_minggu`.`kd_minggu` = $kd_mingguindex; ");
         }
         function tampil_data_edit($index)
         {
