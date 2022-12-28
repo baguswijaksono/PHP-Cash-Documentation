@@ -17,11 +17,11 @@
     $akses_id = $x['akses_id'];
     if($akses_id=='1'){
   ?>
-    <h3>Tambah Data Peminjam</h3>
+    <h3>Tambah Data Kas Keluar</h3>
     <form action="simpan_data_keluar.php" method='POST' class="form">
         <table>
             <tr>
-                <td>nomor</td>
+                <td>Nomor</td>
                 <td><input type="text" name="nomor"></td>
             </tr>
             <tr>
