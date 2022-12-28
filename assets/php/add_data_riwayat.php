@@ -17,7 +17,7 @@
     $akses_id = $x['akses_id'];
     if($akses_id=='1'){
   ?>
-    <h3>Tambah Data Peminjam</h3>
+    <h3>Tambah Data Riwayat Pembayaran</h3>
     <form action="simpan_data_riwayat.php" method='POST' class="form">
         <table>
             <tr>
